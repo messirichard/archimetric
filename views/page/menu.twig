@@ -1,0 +1,299 @@
+{% extends layout %}
+{% block title %}Menu - Shanghai Bowl{% endblock %}
+{% block menu %}menu{% endblock %}
+{% block content %}
+	<div class="right-panel">
+		<div class="back-cream-inside prelatife">
+
+			<section id="top-page-inside" class="inside-page">
+				<div class="insides-section mw-1275 tengah prelatife text-center">
+					<div class="logo-center"><img src="{{ app.request.baseurl }}/asset/images/logo-shanghai-bowl-ins.png" alt="" class="img-responsive pc-center"></div>
+					<div class="clear height-50"></div><div class="height-10"></div>
+					
+					<div class="top-ins-topss-cont">
+						<h1 class="title-page">Menu</h1>
+						<div class="clear"></div>
+						<p class="mb-0">Enjoy the exotic culinary arrays <br>
+							from the authentic kitchen of Shanghai Bowl Restaurant</p>
+						<div class="clear"></div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</section>
+
+			<section id="outer-menu" class="inside-page">
+				<div class="insides-section">
+					<div class="listing-menu">
+						<div class="items back-brown1">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="pict full-images">
+										<ul id="light-gallery" class="gallery light-gallery" style="list-style:none;margin:0px; padding:0;">
+										{% if Data_all_products %}
+											{% for ke, item in Data_all_products %}
+												{% if ke == 0 %}
+												<li data-src="{{ app.request.baseurl }}/asset/images/menu/all-menu/{{ item.images }}" data-sub-html="{{ item.name|title }}">
+													<a href="{{ app.request.baseurl }}/asset/images/menu/all-menu/{{ item.images }}">
+														<img src="{{ app.request.baseurl }}/asset/images/menu-1.jpg" alt="" class="img-responsive">
+													</a>
+												</li>
+												{% else %}
+												<li data-src="{{ app.request.baseurl }}/asset/images/menu/all-menu/{{ item.images }}" data-sub-html="{{ item.name|title }}">
+													<a href="{{ app.request.baseurl }}/asset/images/menu/all-menu/{{ item.images }}"></a>
+												</li>
+												{% endif %}
+											{% endfor %}
+										{% endif %}
+
+											</ul>
+									</div>
+								</div>
+								<div class="col-md-6 outer-height prelatife">
+									<div class="custom_ak-pict"><img src="{{ app.request.baseurl }}/asset/images/opacity-mnu.jpg" alt="" class="img-responsive"></div>
+									<div class="pos-abs-full">
+										<div class="desc">
+											<div class="table-in text-center">
+													<span class="name">A la carte Menu</span>
+													<div class="clear height-15"></div>
+													<div class="hidden-xs">
+													<p>Expect mouth watering culinary display, <br>
+														ready to spoil your tastebuds.</p>
+													</div>
+													<div class="visible-xs">
+													<p>Expect mouth watering culinary display, 
+														ready to spoil your tastebuds.</p>
+													</div>
+													<div class="clear"></div>
+													
+													<ul id="light-gallery" class="gallery light-gallery" style="list-style:none;margin:0px; padding:0;">
+												{% if Data_all_products %}
+												{% for ke, item in Data_all_products %}
+													{% if ke == 0 %}
+													<li data-src="{{ app.request.baseurl }}/asset/images/menu/all-menu/{{ item.images }}" data-sub-html="{{ item.name|title }}">
+														<a class="more" href="{{ app.request.baseurl }}/asset/images/menu/all-menu/{{ item.images }}">
+																	VIEW SLIDE SHOW
+																</a>
+													</li>
+													{% else %}
+													<li data-src="{{ app.request.baseurl }}/asset/images/menu/all-menu/{{ item.images }}" data-sub-html="{{ item.name|title }}">
+														<a href="{{ app.request.baseurl }}/asset/images/menu/all-menu/{{ item.images }}"></a>
+													</li>
+													{% endif %}
+												{% endfor %}
+											{% endif %}
+														</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="clear"></div>
+						<div class="items">
+							<div class="row">
+								<div class="col-md-6 outer-height prelatife">
+									<div class="custom_ak-pict"><img src="{{ app.request.baseurl }}/asset/images/opacity-mnu.jpg" alt="" class="img-responsive"></div>
+									<div class="pos-abs-full">
+										<div class="desc">
+											<div class="table-in text-center">
+													<span class="name">Hot Pot Menu</span>
+													<div class="clear height-15"></div>
+													<div class="hidden-xs">
+														<p>Enjoy the fresh ingredients and secret special blend <br>
+														of herbs that made our soup so special and authentic</p>
+													</div>
+													<div class="visible-xs">
+														<p>Enjoy the fresh ingredients and secret special blend 
+														of herbs that made our soup so special and authentic</p>
+													</div>
+													<div class="clear"></div>
+													<ul id="light-gallery" class="gallery light-gallery" style="list-style:none;margin:0px; padding:0;">
+															<li data-src="{{ app.request.baseurl }}/asset/images/menu/pot/hot-pot-1.jpg" data-sub-html="Sup szechuan & Sup obat">
+																<a class="more" href="{{ app.request.baseurl }}/asset/images/menu/pot/hot-pot-1.jpg">
+																	VIEW SLIDE SHOW
+																</a>
+															</li>
+															<li data-src="{{ app.request.baseurl }}/asset/images/menu/pot/hot-pot-2.jpg" data-sub-html="Sup szechuan & Sup obat">
+																<a href="{{ app.request.baseurl }}/asset/images/menu/pot/hot-pot-2.jpg"></a>
+															</li>
+													</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="pict full-images">
+										<ul id="light-gallery" class="gallery light-gallery" style="list-style:none;margin:0px; padding:0;">
+												<li data-src="{{ app.request.baseurl }}/asset/images/menu/pot/hot-pot-1.jpg" data-sub-html="Sup szechuan & Sup obat">
+													<a href="{{ app.request.baseurl }}/asset/images/menu/pot/hot-pot-1.jpg">
+														<img src="{{ app.request.baseurl }}/asset/images/menu-2.jpg" alt="" class="img-responsive">
+													</a>
+												</li>
+												<li data-src="{{ app.request.baseurl }}/asset/images/menu/pot/hot-pot-2.jpg" data-sub-html="Sup szechuan & Sup obat">
+													<a href="{{ app.request.baseurl }}/asset/images/menu/pot/hot-pot-2.jpg"></a>
+												</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="clear"></div>
+						<div class="items back-brown1">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="pict full-images">
+										<ul id="light-gallery" class="gallery light-gallery" style="list-style:none;margin:0px; padding:0;">
+												<li data-src="{{ app.request.baseurl }}/asset/images/menu/drink-1.jpg" data-sub-html="">
+													<a href="{{ app.request.baseurl }}/asset/images/menu/drink-1.jpg">
+														<img src="{{ app.request.baseurl }}/asset/images/menu-3-drink.jpg" alt="" class="img-responsive">
+													</a>
+												</li>
+												<li data-src="{{ app.request.baseurl }}/asset/images/menu/drink-2.jpg" data-sub-html="">
+													<a href="{{ app.request.baseurl }}/asset/images/menu/drink-2.jpg"></a>
+												</li>
+												<li data-src="{{ app.request.baseurl }}/asset/images/menu/drink-3.jpg" data-sub-html="">
+													<a href="{{ app.request.baseurl }}/asset/images/menu/drink-3.jpg"></a>
+												</li>
+												<li data-src="{{ app.request.baseurl }}/asset/images/menu/drink-4.jpg" data-sub-html="">
+													<a href="{{ app.request.baseurl }}/asset/images/menu/drink-4.jpg"></a>
+												</li>
+												<li data-src="{{ app.request.baseurl }}/asset/images/menu/drink-5.jpg" data-sub-html="">
+													<a href="{{ app.request.baseurl }}/asset/images/menu/drink-5.jpg"></a>
+												</li>
+												<li data-src="{{ app.request.baseurl }}/asset/images/menu/drink-6.jpg" data-sub-html="">
+													<a href="{{ app.request.baseurl }}/asset/images/menu/drink-6.jpg"></a>
+												</li>
+												<li data-src="{{ app.request.baseurl }}/asset/images/menu/drink-7.jpg" data-sub-html="">
+													<a href="{{ app.request.baseurl }}/asset/images/menu/drink-7.jpg"></a>
+												</li>
+												<li data-src="{{ app.request.baseurl }}/asset/images/menu/drink-8.jpg" data-sub-html="">
+													<a href="{{ app.request.baseurl }}/asset/images/menu/drink-8.jpg"></a>
+												</li>
+											</ul>
+									</div>
+								</div>
+								<div class="col-md-6 outer-height prelatife">
+									<div class="custom_ak-pict"><img src="{{ app.request.baseurl }}/asset/images/opacity-mnu.jpg" alt="" class="img-responsive"></div>
+									<div class="pos-abs-full">
+										<div class="desc">
+											<div class="table-in text-center">
+													<span class="name">Beverage Menu</span>
+													<div class="clear height-15"></div>
+													<div class="hidden-xs">
+													<p>Get your self a refreshing beverage that enhance the<br>
+														taste of our dishes even more!</p>
+													</div>
+													<div class="visible-xs">
+													<p>Get your self a refreshing beverage that enhance the 
+														taste of our dishes even more!</p>
+													</div>
+													<div class="clear"></div>
+													
+													<ul id="light-gallery" class="gallery light-gallery" style="list-style:none;margin:0px; padding:0;">
+															<li data-src="{{ app.request.baseurl }}/asset/images/menu/drink-1.jpg" data-sub-html="">
+																<a class="more" href="{{ app.request.baseurl }}/asset/images/menu/drink-1.jpg">
+																	VIEW SLIDE SHOW
+																</a>
+															</li>
+															<li data-src="{{ app.request.baseurl }}/asset/images/menu/drink-2.jpg" data-sub-html="">
+																<a href="{{ app.request.baseurl }}/asset/images/menu/drink-2.jpg"></a>
+															</li>
+															<li data-src="{{ app.request.baseurl }}/asset/images/menu/drink-3.jpg" data-sub-html="">
+																<a href="{{ app.request.baseurl }}/asset/images/menu/drink-3.jpg"></a>
+															</li>
+															<li data-src="{{ app.request.baseurl }}/asset/images/menu/drink-4.jpg" data-sub-html="">
+																<a href="{{ app.request.baseurl }}/asset/images/menu/drink-4.jpg"></a>
+															</li>
+															<li data-src="{{ app.request.baseurl }}/asset/images/menu/drink-5.jpg" data-sub-html="">
+																<a href="{{ app.request.baseurl }}/asset/images/menu/drink-5.jpg"></a>
+															</li>
+															<li data-src="{{ app.request.baseurl }}/asset/images/menu/drink-6.jpg" data-sub-html="">
+																<a href="{{ app.request.baseurl }}/asset/images/menu/drink-6.jpg"></a>
+															</li>
+															<li data-src="{{ app.request.baseurl }}/asset/images/menu/drink-7.jpg" data-sub-html="">
+																<a href="{{ app.request.baseurl }}/asset/images/menu/drink-7.jpg"></a>
+															</li>
+															<li data-src="{{ app.request.baseurl }}/asset/images/menu/drink-8.jpg" data-sub-html="">
+																<a href="{{ app.request.baseurl }}/asset/images/menu/drink-8.jpg"></a>
+															</li>
+														</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</section>
+
+			<section id="contact_section" class="inside-page">
+				<div class="insides-section tengah prelatife text-center">
+
+
+					<div class="text-center"><img src="{{ app.request.baseurl }}/asset/images/back-bottom-linemidl-con.png" alt="" class="pc-center"></div>
+					<div class="texts">
+						<p><span class="red">ADDRESS</span> <br>
+							Lenmarc Mal <br>
+							Jl. Bukit Darmo Boulevard <br>
+							Surabaya 60187, Indonesia 
+							</p>
+
+							<p>
+							<span class="red">TELEPHONE</span> <br>
+							+62 31 732 8866
+							</p>
+
+							<p>
+							<span class="red">EMAIL</span> <br>
+							info@SHANGHAIBOWL.co.ID
+							</p>
+							<div class="clear height-10"></div>
+								<div class="social-footers text-center">
+									<div class="d-inline vtops">
+										<a href="https://twitter.com/xorestaurants" target="_blank" class="i-social"><i class="fa fa-twitter"></i></a>
+									</div>&nbsp;&nbsp;
+									<div class="d-inline vtops">
+										<a href="https://www.facebook.com/xorestaurants/?fref=ts" target="_blank" class="i-social"><i class="fa fa-facebook"></i></a>
+									</div>&nbsp;&nbsp;
+									<div class="d-inline vtops">
+										<a href="https://instagram.com/shanghaibowl/" target="_blank" class="i-social"><i class="fa fa-instagram"></i></a>
+									</div>
+								</div>
+								<div class="clear height-0"></div>
+							<div class="t-copyrighttss">
+								WEB DESIGN BY <a href="http://markdesign.net" target="_blank" title="Website Design Surabaya">MARKDESIGN</a>.
+							</div>
+						<div class="clear"></div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</section>
+			
+			<div class="clear"></div>
+		</div>
+
+		<div class="clear"></div>
+	</div>
+{# end container #}
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		// var set_height = $('.listing-menu .items .full-images').height();
+		// $('.listing-menu .items .outer-height').css("height", set_height+"px");
+	});
+</script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.15/css/lightgallery.css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.15/js/lightgallery-all.min.js"></script>
+<script>
+	 $(document).ready(function() {
+		$(".light-gallery").lightGallery({
+			thumbnail:false,
+		    animateThumb: false,
+		    showThumbByDefault: false
+		});
+	});
+</script>
+{% endblock %}

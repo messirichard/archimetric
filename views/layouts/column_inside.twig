@@ -1,0 +1,12 @@
+{% extends 'layouts/main.twig' %}
+{% block maincontent %}
+<body class="inside prelatife">
+	<div class="wrapperinside prelatif">
+		{# {% include "/layouts/header.twig" with { 'menu': block('menu') } %} #}
+		{% include "/layouts/left_menu-wrapper3.twig" with { 'menu': block('menu') } %}
+			{% block content %}{% endblock %}
+			<a id="back-to-top" class="t-backtop" href="javascript:;"><i class="fa fa-chevron-up"></i></a>
+		<div class="clear"></div>
+	</div>
+</body>
+{% endblock %}

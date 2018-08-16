@@ -1,0 +1,179 @@
+{% extends layout %}
+{% block title %}Contact Us Archimetric - Architects & Engineers - Surabaya, Indonesia{% endblock %}
+{% block menu %}about{% endblock %}
+{% block content %}
+	<div class="right-panel">
+		<div class="back-cream-inside prelatife">
+			
+			<section id="top-page-inside" class="inside-page">
+				<div class="insides-section mw-1275 tengah prelatife text-center">
+					<div class="logo-center">
+						<img src="{{ app.request.baseurl }}/asset/images/logo-archimetric-insidepage.png" alt="" class="img-responsive pc-center">
+						<div class="clear"></div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</section>
+
+			<section id="default" class="inside-page">
+				<div class="insides-section mw-1275 tengah prelatife text-center">
+
+						<div class="top-ins-topss-cont page_careers">
+							<h1 class="title-page">CONTACT US</h1>
+							<div class="clear height-15"></div>
+
+							<div class="lines-black-about-tops-pg tengah"></div>
+							<div class="clear height-50"></div>
+							<div class="height-30"></div>
+
+							{# start careers #}
+							<div class="content-text text-left">
+								<div class="row">
+									<div class="col-md-12 col-lg-6">
+										<div class="padding-right-15">
+											
+											{# start form contact #}
+											<div class="box-form">
+												{% if error|length > 0 %}
+												    <div class="alert alert-danger bg-danger">
+												    	<button type="button" class="close" data-dismiss="alert">&times;</button>
+													    <h6>Please fix the following input errors:</h6>
+													    <ul>
+													    	{% for dataError in error %}
+													    	<li>{{ dataError }}</li>
+													    	{% endfor %}
+													    </ul>
+												    </div>
+												{% endif %}
+												{% if msg == 'error_message' %}
+												    <div class="alert alert-danger">
+												    	<button type="button" class="close" data-dismiss="alert">&times;</button>
+													    Please Check Captcha for sending contact form! 
+												    </div>
+												{% endif %}
+												{% if msg == 'success' %}
+												    <div class="alert alert-success">
+												    	<button type="button" class="close" data-dismiss="alert">&times;</button>
+													    Thank you for contacting us! we will respond to you shortly.
+												    </div>
+												{% endif %}
+												<form method="post" action="" role="form">
+													<div class="row default">
+														<div class="col-md-6 col-sm-6">
+															<div class="form-group mr-10">
+															    <label for="exampleInputName">Full Name</label>
+															    <input type="text" name="Contact[name]" class="form-control" id="exampleInputName"  required>
+															</div>
+														</div>
+														<div class="col-md-6 col-sm-6">
+															<div class="form-group">
+															    <label for="exampleInputEmail">Email</label>
+															    <input type="email" name="Contact[email]" class="form-control" id="exampleInputEmail"  required>
+															</div>
+														</div>
+													</div>
+													<div class="row default">
+														<div class="col-md-6 col-sm-6">
+															<div class="form-group mr-10">
+															    <label for="exampleInputPhone">Phone</label>
+															    <input type="text" name="Contact[phone]" class="form-control" id="exampleInputPhone"  required>
+															</div>
+														</div>
+														<div class="col-md-6 col-sm-6">
+															<div class="form-group">
+															    <label for="exampleInputCompany">Company</label>
+															    <input type="text" name="Contact[company]" class="form-control" id="exampleInputCompany" required>
+															</div>
+														</div>
+													</div>
+													<div class="row default">
+														<div class="col-md-6 col-sm-6">
+															<div class="form-group mr-10">
+															    <label for="exampleInputAddr">Address</label>
+															    <div class="clear"></div>
+															    <textarea name="Contact[address]" rows="3" class="form-control" id="exampleInputAddr" required></textarea>
+															</div>
+														</div>
+														<div class="col-md-6 col-sm-6">
+															<div class="form-group">
+															    <label for="exampleInputCountry">Country</label> <div class="clear"></div>
+															    <input type="text" name="Contact[country]" class="form-control" id="exampleInputCountry" required>
+															</div>
+														</div>
+													</div>
+													<div class="row default">
+														<div class="col-md-12 col-sm-12">
+															<div class="form-group">
+															    <label for="exampleInputMessage">Message</label> 
+															    <div class="clear"></div>
+															    <textarea name="Contact[message]" rows="4" class="form-control" required></textarea>
+
+															</div>
+														</div>
+													</div>
+													<div class="row default">
+														<div class="col-md-12 col-sm-12">
+															<div class="fright-inpd">
+																<div class="form-group mb-0">
+																	<div class="fleft">
+																		<div class="g-recaptcha" data-sitekey="6Lfhyf8SAAAAAEIoCVTdALU8u4mOtj0o8cGiTedX"></div>
+																	</div>
+																	<div class="fright margin-left-30">
+																		<div class="clear height-40 hidden-xs"></div>
+																		<div class="visible-xs clear height-10"></div>
+																		<button type="submit" class="btn btn-default btns-submit-bt">SUBMIT</button>
+																	</div>
+																	<div class="clear"></div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</form> 
+												<div class="clear"></div>
+											</div>
+											{# end form contact #}
+
+										</div>
+									</div>
+									<div class="col-md-12 col-lg-6">
+										<div class="padding-left-15">
+											<div class="clear height-15"></div><div class="height-3"></div>
+											<h4>{{ get_setting.contact_name }}</h4>
+											<p>{{ get_setting.contact_alamat|nl2br }}</p>
+											<p>
+												T: {{ get_setting.contact_telp }} <br>
+												F: {{ get_setting.contact_fax }} <br>
+												E: <a href="mailto:{{ get_setting.contact_email }}">{{ get_setting.contact_email }}</a>
+											</p>
+											<div class="clear height-30"></div>
+											<div class="g-maps-whiteContact">
+												<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=Jl.+raya+manyar+tirtomoyo+7,+surabaya+indonesia&aq=&sll=-7.287083,112.768309&sspn=0.008024,0.009645&vpsrc=0&ie=UTF8&hq=&hnear=Jalan+Manyar+Tirtomoyo+Raya,+Surabaya,+East+Java,+Indonesia&ll=-7.287084,112.768307&spn=0.008024,0.009645&t=m&z=14&output=embed' frameborder='0' style='border:0'></iframe></div>
+												<div class="clear"></div>
+												<div class="clear height-10"></div>
+												<small class="text-left" style="float:left;"><a class="text-left" target="_blank" href="http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Jl.+raya+manyar+tirtomoyo+7,+surabaya+indonesia&amp;aq=&amp;sll=-7.287083,112.768309&amp;sspn=0.008024,0.009645&amp;vpsrc=0&amp;ie=UTF8&amp;hq=&amp;hnear=Jalan+Manyar+Tirtomoyo+Raya,+Surabaya,+East+Java,+Indonesia&amp;ll=-7.287084,112.768307&amp;spn=0.008024,0.009645&amp;t=m&amp;z=14" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+												<div class="clear"></div>
+											</div>
+											<div class="clear"></div>
+										</div>
+									</div>
+								</div>
+								<div class="clear height-50"></div>
+								<div class="clear"></div>
+							</div>
+							{# end careers #}
+
+							<div class="clear"></div>
+						</div>
+					
+					<div class="clear"></div>
+				</div>
+			</section>
+			
+			{% include "/layouts/footer_bottom_insides.twig" %}
+			<div class="clear"></div>
+		</div>
+		<div class="clear"></div>
+	</div>
+{# end container #}
+<script src='https://www.google.com/recaptcha/api.js'></script>
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends 'layouts/main.twig' %}
+{% block maincontent %}
+<body>
+		<div class="wrapperinside prelatif">
+			{# {% include "/layouts/header.twig" with { 'menu': block('menu') } %} #}
+			{% include "/layouts/left_menu-wrapper.twig" with { 'menu': block('menu') } %}
+				{% block content %}{% endblock %}
+			<div class="clear"></div>
+		</div>
+</body>
+{% endblock %}

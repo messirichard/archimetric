@@ -1,0 +1,57 @@
+/*-------------------------- CONTENT DALAM ----------------------------*/
+.redactor-editor{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #141414;
+}
+.redactor-editor > h1,
+.redactor-editor > h2,
+.redactor-editor > h3,
+.redactor-editor > h4,
+.redactor-editor > h5,
+.redactor-editor > h6{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: none !important;
+}   
+
+.redactor-editor > h1{
+    margin: 0;
+    margin-bottom: 18px;
+
+    font-size: 35px;
+    font-weight: 300;
+    color: #000;
+}
+.redactor-editor > h5,
+.redactor-editor > h4{
+    margin: 0;
+    margin-bottom: 21px;
+    
+    font-size: 22px;
+    font-weight: 300;
+    color: #000;
+    line-height: 1.5;
+}
+.redactor-editor > h5{ font-size: 19px; }
+
+.redactor-editor > h2,
+.redactor-editor > h3,
+.redactor-editor > h4,
+.redactor-editor > h5,
+.redactor-editor > h6{
+    margin-bottom: 20px;
+}
+.redactor-editor > img{ margin-bottom: 30px; }
+
+.redactor-editor > p{
+    margin-bottom: 20px;
+}
+
+.redactor-editor > a{
+    color: #141414;
+}
+.redactor-editor > a:hover{
+    color: #000;
+}

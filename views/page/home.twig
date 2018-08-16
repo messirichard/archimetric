@@ -1,0 +1,176 @@
+{% extends layout %}
+{% block title %}Archimetric - Architects & Engineers - Surabaya, Indonesia{% endblock %}
+{% block menu %}homepage{% endblock %}
+{% block content %}
+	<div class="right-panel">
+		<div class="back-cover-fcs prelatife bridal-about">
+			<div class="outer-contx-middle-sout">
+						<div class="contx-middle-top-logoversion">
+							{# Start full fcs #}
+							<div class="outers-fcs-slider prelatife">
+							    <div id="Full-slide" class="carousel fade" data-pause="false" data-ride="carousel" data-interval="6000">
+							        <div class="carousel-inner">
+							        	{% if Data_Fcs %}
+							        		{% for kl, fcsd in Data_Fcs %}
+									            <div {% if kl == 0 %}id="aktif1"{% endif %} class="item {% if kl == 0 %}active{% endif %}">
+									            	<div class="fill" style="background-image:url('{{ app.request.baseurl }}/admin/images/slide/{{ fcsd.image }}');"></div>
+									                {# <div class="fill visible-lg" style="background-image:url('{{ app.request.baseurl }}/asset/images/fcs-1.jpg');"></div>
+									                <div class="fill visible-md" style="background-image:url('{{ app.request.baseurl }}/asset/images/fcs-1-ipad.jpg');"></div>
+									                <div class="fill visible-sm visible-xs" style="background-image:url('{{ app.request.baseurl }}/asset/images/fcs-1-iphone.jpg');"></div> #}
+									            </div>
+							        		{% endfor %}
+							        	{% endif %}
+							        </div>
+							    </div>
+
+							    <div class="clear clearfix"></div>
+							</div>
+							{# End full fcs #}
+							{# <div class="pos-abs-fulls outers_content-mid-home">
+								<div class="table-outes">
+									<div class="table-in">
+										<div class="cont-home-middle-s">
+											<h1 class="title logo-custom-cennt">
+												<img src="{{ app.request.baseurl }}/asset/images/logo-shanghai-bowl.png" alt="">
+												<div class="clear"></div>
+												<span class="tagline-home">by x.o group of restaurants</span>
+											</h1>
+											<div class="clear height-40"></div>
+											<div class="hidden-xs">
+											<img class="pc-center tg1" src="{{ app.request.baseurl }}/asset/images/t-exprience-home-th.png" alt="">
+											</div>
+											<div class="visible-xs">
+												<img class="pc-center tg1" src="{{ app.request.baseurl }}/asset/images/t-exprience-home-th-resp.png" alt="">
+											</div>
+											<div class="clear height-10"></div>
+											<img class="pc-center tg2 hidden-xs" src="{{ app.request.baseurl }}/asset/images/t-home-china-tx.png" alt="">
+
+											<div class="clear"></div>
+										</div>
+
+										<div class="clear"></div>
+									</div>									
+								</div>
+								<div class="outers-cont-bottm-home">
+									<div class="mw-1266 tengah prelatife text-center padding-bottom-40">
+
+										<div class="listing-cont-btm-homes">
+											<div class="row">
+												<div class="col-md-3 col-sm-6">
+													<div class="items bd-r">
+														<span class="names">Who we are and the story behind our brand</span>
+														<div class="clear height-20"></div>
+														<div class="lines-ann-b"></div>
+														<div class="clear height-25"></div>
+														<a href="{{ url('about') }}" class="link-red">LEARN MORE ABOUT OUR BRAND</a>
+														<div class="clear"></div>
+													</div>
+												</div>
+												<div class="col-md-3 col-sm-6">
+													<div class="items bd-r disable-border-ipad">
+														<span class="names">All the authentic culinary arrays that will spoil your tastebud</span>
+														<div class="clear height-20"></div>
+														<div class="lines-ann-b"></div>
+														<div class="clear height-25"></div>
+														<a href="{{ url('menu') }}" class="link-red">explore SHANGHAI BOWL&rsquo;S MENU</a>
+														<div class="clear"></div>
+													</div>
+												</div>
+												<div class="col-md-3 col-sm-6">
+													<div class="items bd-r">
+														<span class="names">We cater to all kinds of events that you&rsquo;re planning to do</span>
+														<div class="clear height-20"></div>
+														<div class="lines-ann-b"></div>
+														<div class="clear height-25"></div>
+														<a href="{{ url('functions') }}" class="link-red">PREPARE FOR YOUR NEXT VENUE</a>
+														<div class="clear"></div>
+													</div>
+												</div>
+												<div class="col-md-3 col-sm-6">
+													<div class="items">
+														<span class="names">Contact Shanghai Bowl and let us cater to your needs</span>
+														<div class="clear height-20"></div>
+														<div class="lines-ann-b"></div>
+														<div class="clear height-25"></div>
+														<a href="{{ url('contact') }}" class="link-red">contact SHANGHAI BOWL</a>
+														<div class="clear"></div>
+													</div>
+												</div>
+											</div>
+											<div class="clear"></div>
+										</div>
+
+										<div class="clear"></div>
+									</div>
+									<div class="clear"></div>
+								</div>
+								<div class="clear"></div>
+							</div> #}
+							<div class="clear"></div>
+						</div>
+					</div>
+			<div class="clear"></div>
+		</div>
+
+		<div class="clear"></div>
+	</div>
+{# end container #}
+
+<script type="text/javascript">
+	$(window).load(function(){
+		var newWidthloiy = $(window).width();
+		var margn_leftk = 45;
+		var haslhl;
+		if (newWidthloiy < 768){
+			haslhl = newWidthloiy - margn_leftk;
+			$('.back-cover-fcs').css('width', haslhl+'px');
+		}
+	});
+
+	$(window).load(function(){
+		widthF = $(window).width();
+		// if (widthF >= 768 ) {
+			$('#aktif1').addClass('aktif2');
+			$('#Full-slide').on('slid.bs.carousel', function () {
+			   $('#Full-slide div.carousel-inner .item').removeClass('aktif2');
+			   $('#Full-slide div.carousel-inner .active').addClass('aktif2'); // .attr('data-id')
+			});
+
+			// $('#aktif12_2').addClass('aktif2');
+			// $('#carousel-exfcs2').on('slid.bs.carousel', function () {
+			//    $('#carousel-exfcs2 div.carousel-inner .item').removeClass('aktif2');
+			//    $('#carousel-exfcs2 div.carousel-inner .active').addClass('aktif2'); // .attr('data-id')
+			// });
+		// };
+	});
+</script>
+<style type="text/css">
+	
+	.carousel-fade .item {
+	  opacity: 0;
+	  -webkit-transition: opacity 1s ease-in-out;
+	  -moz-transition: opacity 1s ease-in-out;
+	  -ms-transition: opacity 1s ease-in-out;
+	  -o-transition: opacity 1s ease-in-out;
+	  transition: opacity 1s ease-in-out;
+	  left: 0 !important;
+	}
+
+	.carousel-fade .active {
+	  opacity: 1 !important;
+	}
+
+	.carousel-fade .left {
+	  opacity: 0 !important;
+	  -webkit-transition: opacity 0.5s ease-in-out !important;
+	  -moz-transition: opacity 0.5s ease-in-out !important;
+	  -ms-transition: opacity 0.5s ease-in-out !important;
+	  -o-transition: opacity 0.5s ease-in-out !important;
+	  transition: opacity 0.5s ease-in-out !important;
+	}
+
+	.carousel-fade .carousel-control {
+	  opacity: 1 !important;
+	}
+</style>
+{% endblock %}

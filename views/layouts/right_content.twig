@@ -1,0 +1,89 @@
+<div class="right-content">
+		<div class="box-white purple">
+			<span class="title-right-s">WE&rsquo;RE HERE TO HELP</span>
+			<div class="clear height-15"></div>
+			<dl class="dl-horizontal">
+				  <dt><i class="icon-info-hotline"></i></dt>
+				  <dd><b>Information Hotline:</b><br>
+						+62 31 568 3588</dd>
+
+					<div class="clear"></div>
+					<div class="lines-grey"></div>
+					<div class="clear height-10"></div>
+
+				  <dt><i class="icon-info-mail"></i></dt>
+				  <dd><b>Information Hotline:</b><br>
+						<a href="mailto:info@daunilifestyle.com">info@daunilifestyle.com</a></dd>
+				</dl>
+
+			<div class="clear"></div>
+		</div>
+
+		<div class="clear height-10"></div>
+		
+		<div class="box-white form-diningreservation">
+			<span class="title-right-s">DAUNI DINING RESERVATION</span>
+			<div class="clear height-15"></div>
+
+			<form action="{{ url('reserve') }}" class="form-horizontal" method="post" role="form">
+			  <div class="form-group">
+			    <label class="col-sm-4 control-label">Name</label>
+			    <div class="col-sm-8">
+			      <input type="text" class="form-control" name="reservation[name]" required >
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <label class="col-sm-4 control-label">Email</label>
+			    <div class="col-sm-8">
+			      <input type="text" class="form-control" name="reservation[email]" required >
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <label class="col-sm-4 control-label">Phone</label>
+			    <div class="col-sm-8">
+			      <input type="text" class="form-control" name="reservation[phone]" required >
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <label class="col-sm-4 control-label">No. of pax</label>
+			    <div class="col-sm-8">
+			      <input type="text" class="form-control" name="reservation[no_pax]" required >
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <label class="col-sm-4 control-label">Date</label>
+			    <div class="col-sm-8">
+			      <input type="text" class="form-control" name="reservation[date]" required >
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <label class="col-sm-4 control-label">Time</label>
+			    <div class="col-sm-8">
+			      <input type="text" class="form-control" name="reservation[time]" >
+			    </div>
+			  </div>
+			  
+			  <div class="form-group">
+			    <div class="col-sm-offset-4 col-sm-8">
+			      <button type="submit" class="btn bt-purple-readmore">RESERVE</button>
+			    </div>
+			  </div>
+			</form>
+
+			
+			<div class="clear"></div>
+		</div>
+		<div class="clear height-10"></div>
+		<div class="box-white">
+			<a href="http://arvadacorporation.com/?msg=open_f_member" target="_blank">
+				<div class="pic"><img src="{{ app.request.baseurl }}/asset/images/banner-membership.jpg" alt="Dauni - Banner membership"></div>
+				<div class="clear height-10"></div>
+				<h1 class="name">MEMBERSHIP & REWARDS</h1>
+				<div class="clear"></div>
+				<span class="desc">Every moment at DAUNI is rewarded.</span>
+			</a>
+			<div class="clear"></div>
+		</div>
+
+		<div class="clear"></div>
+	</div>

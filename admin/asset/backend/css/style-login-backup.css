@@ -1,0 +1,58 @@
+.header.cms-login{
+        background: url(../../images/back-header.jpg) repeat-x;
+        height: 134px;
+        -webkit-box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.15);
+        -moz-box-shadow:    1px 1px 3px 0px rgba(0, 0, 0, 0.15);
+        box-shadow:         1px 1px 3px 0px rgba(0, 0, 0, 0.15);
+}
+body.loginpage{ background-color: #F2F2F2; }
+
+.height-5{height: 5px;}.height-10{height: 10px;}
+.height-15{height: 15px;}.height-20{height: 20px;}
+.height-25{height: 25px;}.height-30{height: 30px;}
+.height-35{height: 35px;}.height-40{height: 40px;}
+.height-45{height: 45px;}.height-50{height: 50px;}
+.height-55{height: 55px;}.height-60{height: 60px;}
+.margin-left-20{ margin-left: 20px; }
+.fleft{ float: left; }
+.fright{ float: right; }
+.text-rightlogin{ font-size: 22px; font-weight: 700; color: #000; margin-top: 86px;  font-family: 'LatoBold', 'Helvetica Neue', Helvetica, sans-serif; }
+
+.loginpanelinner .logo{
+	float: none;
+	width: auto;
+	padding: 0px; padding-bottom: 25px;
+	font-family: 'LatoBold', 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 19px;
+}
+.loginpanelinner{ top: -100px !important; }
+.loginfooter{ color: #000; }
+.loginfooter a{ color: #404237; }
+.loginfooter a:hover,.loginfooter a:focus{ color: #000; }
+
+@media screen and (max-width: 1024px) {
+	
+	.header .logo {
+		margin: 0;
+	    /*margin-left: -260px;*/
+	}
+	.container{ padding: 0 15px; }
+
+	.loginpanelinner{ top: 0px !important; }
+
+}
+@media screen and (max-width: 640px){
+	.header.cms-login{ height: auto; background: #fff url(../../images/back-header.jpg) repeat-x; }
+}
+@media screen and (max-width: 632px){
+	
+	.logo-top { float: none; width: auto; margin: 0px auto; }
+	.logo-top .in-lgo { position: relative !important; text-align: center; }
+	.logo-top .in-lgo img{ width: 50%; }
+	.iso-header-lgo{ float: none; margin: 0px; }
+	.iso-header-lgo .height-40 { height: 10px; }
+	.lgo-headeriso{ text-align: center; }
+	.text-rightlogin{ float: none; text-align: center; margin: 1em auto; }
+	.loginfooter{ position: relative; }
+
+}

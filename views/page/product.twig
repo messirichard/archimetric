@@ -1,0 +1,101 @@
+{% extends layout %}
+{% block title %}Products - Gartner Lighting{% endblock %}
+{% block menu %}product{% endblock %}
+{% block content %}
+	<section class="inside-content-outer">
+		<div class="lines-grey-header"></div>
+		<div class="prelatife container inside-content">
+			<div class="clear height-50"></div>
+			<div class="height-20"></div>
+			<div class="row content-text">
+				<div class="col-md-12">
+					<div class="fleft"><h1>Products</h1></div>
+					<div class="fright">
+						<div class="wrap-breadcrumb">
+							<ol class="breadcrumb">
+							  <li><a href="{{ url('homepage') }}">HOME</a></li>
+							  <li class="active"> PRODUCTS</li>
+							</ol>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+					<div class="in-content-product">
+						<div class="fleft w233 leftmenu-product">
+							<ul class="list-unstyled">
+								<li><a href="{{ path('produk_detail',  {'id': 1}) }}">Single - Road Light Series</a></li>
+								<li><a href="{{ path('produk_detail',  {'id': 2}) }}">Double - Road Light Series</a></li>
+								<li><a href="{{ path('produk_detail',  {'id': 3}) }}">Working Lamp</a></li>
+								<li><a href="{{ path('produk_detail',  {'id': 4}) }}">Single - Project Light Series</a></li>
+								<li><a href="{{ path('produk_detail',  {'id': 5}) }}">Double - Project Light Series</a></li>
+							</ul>
+						</div>
+						<div class="fright w1086">
+							<div class="list-data-product row">
+								<div class="col-md-6 col-sm-6">
+									<div class="item kiri">
+										<span class="title"><a href="{{ path('produk_detail',  {'id': 1}) }}">Single - Road Light Series</a></span>
+										<div class="clear height-20"></div>
+										<p>Energy Efficient & Low Maintenance</p>
+										<div class="pict"><a href="{{ path('produk_detail',  {'id': 1}) }}"><img src="{{ app.request.baseurl }}/asset/images/road-light-series-single.jpg" alt="" class="img-responsive"></a></div>
+									</div>
+								</div>
+								<div class="col-md-6 col-sm-6">
+									<div class="item kanan">
+										<span class="title"><a href="{{ path('produk_detail',  {'id': 2}) }}">Double - Road Light Series</a></span>
+										<div class="clear height-20"></div>
+										<p>Energy Efficient & Low Maintenance</p>
+										<div class="pict"><a href="{{ path('produk_detail',  {'id': 2}) }}"><img src="{{ app.request.baseurl }}/asset/images/road-light-series-double.jpg" alt="" class="img-responsive"></a></div>
+									</div>
+								</div>
+								<div class="clear height-15"></div>
+								<div class="lines-grey h4"></div>
+								<div class="clear height-35"></div>
+								<div class="col-md-6 col-sm-6">
+									<div class="item kiri">
+										<span class="title"><a href="{{ path('produk_detail',  {'id': 3}) }}">WORKING LAMP</a></span>
+										<div class="clear height-20"></div>
+										<p>Hight Output Wide Distributions</p>
+										<div class="pict"><a href="{{ path('produk_detail',  {'id': 3}) }}"><img src="{{ app.request.baseurl }}/asset/images/working-light-series.jpg" alt="" class="img-responsive"></a></div>
+									</div>
+								</div>
+								<div class="col-md-6 col-sm-6">
+									<div class="item kanan">
+										<span class="title"><a href="{{ path('produk_detail',  {'id': 4}) }}">Single - PROJECT LIGHT SERIES</a></span>
+										<div class="clear height-20"></div>
+										<p>RELIABLE, FOCUS & SPOT ON</p>
+										<div class="pict"><a href="{{ path('produk_detail',  {'id': 4}) }}"><img src="{{ app.request.baseurl }}/asset/images/project-light-series-single.jpg" alt="" class="img-responsive"></a></div>
+									</div>
+								</div>
+								<div class="clear height-15"></div>
+								<div class="lines-grey h4"></div>
+								<div class="clear height-35"></div>
+								<div class="col-md-6 col-sm-6">
+									<div class="item kanan">
+										<span class="title"><a href="{{ path('produk_detail',  {'id': 5}) }}">Double - PROJECT LIGHT SERIES</a></span>
+										<div class="clear height-20"></div>
+										<p>RELIABLE, FOCUS & SPOT ON</p>
+										<div class="pict"><a href="{{ path('produk_detail',  {'id': 5}) }}"><img src="{{ app.request.baseurl }}/asset/images/project-light-series-double.jpg" alt="" class="img-responsive"></a></div>
+									</div>
+								</div>
+
+								<div class="clear"></div>
+							</div>
+
+							<div class="clear height-50"></div>
+						</div>
+						<div class="clear"></div>
+					</div>
+
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="clear height-50"></div>
+			<div class="height-10"></div>
+			{% include "/layouts/f_bannerbrand.twig" %}
+
+			<div class="clear"></div>
+		</div>
+		<div class="clear"></div>
+	</section>
+{% endblock %}

@@ -1,0 +1,649 @@
+/*----------------- Responsive ---------------------*/
+@media (max-width: 1650px){
+	
+	.cont-home-middle-s {
+	    top: -70px;
+	    position: relative;
+	}
+	.outers-cont-bottm-home{
+		height: auto;
+	}
+	.outers-cont-bottm-home .padding-bottom-40{
+		padding-bottom: 30px;
+	}
+
+	.back-left-menu ul li {
+	    padding: 18px 0;
+	}
+
+	.chnge-20-deks16{ 
+		/*height: 20px;*/
+		height: 37px;
+	}
+	.left-panel .inside{
+		padding-top: 15px;
+	}
+	.outer-contx-middle-sout .cont-home-middle-s .height-40{
+		height: 20px;
+	}
+
+}
+
+@media (max-width: 1400px){
+	
+	.mw-1389,
+	.listing-projects-dt,
+	.mw-1166,
+	.mw-1275{
+		max-width: 1135px;
+	}
+	.mw-1389.cont_services{
+		margin-left: 110px;
+		margin-right: 105px;
+	}
+	.listing-people-leadership-t .items{
+		padding: 0 0.4em;
+	}
+	footer.inside-section .ins_footer span.d-inline{
+		font-size: 25px;
+	}
+	.outers-dt-listingCOnt-services{
+		margin-right: -40px;
+	}
+	.outers-dt-listingCOnt-services .items{
+		margin-left: 0; margin-right: 25px;
+	}
+	.outers-dt-listingCOnt-services .items .cont-white-left h4{
+		font-size: 32px;
+	}
+
+}
+
+@media (max-width: 1480px){
+	
+	.cont-home-middle-s {
+	    top: -75px;
+	}
+	.listing-cont-btm-homes .items span.names{
+		font-size: 18px;
+	}
+	.listing-cont-btm-homes {
+	    padding: 0 3em;
+	}
+
+	/*// footer panel*/
+	.cont-footer-left-panel{ bottom: 15px; }
+	.back-left-menu .height-25{
+		height: 8px;
+	}
+	.back-left-menu ul li {
+	    /*padding: 11px 0;*/
+	}
+	.left-panel .inside .cont-footer-left-panel p {	   
+	    font-size: 12px;
+	    line-height: 1.5;
+	    margin-bottom: 15px;
+	}
+	.left-panel .inside {
+	    /*padding-top: 5px;*/
+	}
+	section.inside-page .insides-section .top-ins-topss-cont p{ font-size: 18px; }
+
+}
+
+@media (min-width: 1280px){
+	.lgo-web-inside-leftpanel {
+	    /*margin-left: 15px;*/
+	}
+}
+
+@media (max-width: 1280px){
+
+}
+/* Large desktop */
+@media (max-width : 1135px){
+	
+	
+}
+@media (max-width: 1055px){
+	
+}
+
+@media (max-width : 1024px){
+	
+	.padding-outer-scroll .fleft{ /*float: none;*/ }
+	.left-first-collectiondetail{ max-width: 242px; }
+ 	.back-ins-collection-outer{ width: 100%; }
+ 	.bck-collction a{ font-size: 12px; }
+ 	.padding-outer-scroll .height-185{ /* height: 12px; */ }
+ 	#scrollbar1 .overview .padding-left-30{ padding-left: 15px; }
+ 	#scrollbar1 .overview{ padding-right: 30px; }
+	.right-panel.back-ins-collection-outer{ overflow-y: scroll; }
+	/*.left-panel .inside .height-50{ height: 18px; }*/
+	.back-cover-fcs.bridal-about.bck-about2{ height: auto; }
+
+	.back-cover-fcs.bridal-about.gallery{ width: 90%; }
+	.back-cover-fcs.bridal-about.gallery .out-galleryst .overview{ padding-right: 0px; }
+	.left-menuhover2-sty .height-50{ height: 20px; }
+
+	.cont-home-middle-s {
+	    top: -100px;
+	}
+	.cont-home-middle-s h1 img{
+		max-width: 210px;
+	}
+	.listing-cont-btm-homes .items span.names {
+	    font-size: 16px;
+	}
+	.listing-cont-btm-homes .items a.link-red {
+	    letter-spacing: 0px;
+	    font-size: 11px;
+	}
+	.listing-cont-btm-homes .items {
+	    padding: 15px 10px 25px;
+	}
+	.outers-cont-bottm-home .padding-bottom-40{
+		padding-left: 3em; padding-right: 0em;
+	}
+	.custom-picture-abouts{}
+	.custom-picture-abouts .pr-10{ padding-right: 0; }
+
+	/*-------------- archimetrics ---------------*/
+	.mw-940{
+		padding: 0 2.5em;
+	}
+	.setup-about-middle-custom-ct .list .desc{
+		padding-top: 60px;
+	}
+	.setup-about-middle-custom-ct{
+		padding: 0 2em;
+	}
+	.setup-about-middle-custom-ct .list .desc h3{
+		font-size: 32px;
+	}
+	.setup-about-middle-custom-ct .tagline-right{
+		margin-bottom: 12em;
+	}
+	.outers-dt-listingCOnt-services .items{
+		margin: 0 auto;
+		margin-bottom: 55px;
+	}
+	.outers-dt-listingCOnt-services{
+		max-width: 660px; margin: 0 auto;
+	}
+
+	.listing-people-leadership-t .items{
+		min-height: 765px;
+		overflow: hidden;
+	}
+
+	footer.inside-section .ins_footer span.d-inline.t-footers{
+            font-size: 20px; padding-left: 1.5em;
+        }
+    footer.inside-section .ins_footer .lines-Ftoers{
+        max-width: 100px;
+    }
+    footer.inside-section .ins_footer img.margin-top-m8{
+        max-width: 100%;
+    }
+    footer.inside-section .ins_footer .fright.margin-top-m5{
+        max-width: 190px; margin-right: 2.5em;
+    }
+
+    .outers_projectr_slt{
+    	max-width: 650px; margin: 0 auto;
+    }
+    .page_projects .listing-projects-dt{
+    	width: inherit;
+    }
+    section#top-page-inside .insides-section{
+    	padding-top: 50px; padding-bottom: 50px;
+    }
+    .page_careers{
+    	max-width: 710px; margin: 0 auto;
+    }
+    .page_careers .padding-right-15{
+    	padding-right: 0;
+    }
+    .page_careers .padding-left-15{
+    	padding-left: 0;
+    	padding-top: 5em;
+    }
+    .page_careers .picts-right{
+    	float: none;
+    }
+
+}
+
+@media (max-width : 1002px) {
+	
+	.back-white-ins-aboutn{ width: 600px; }
+	.back-white-ins-aboutn .ins{ padding-right: 15px; }
+
+	.outers_content-mid-home{}
+	.cont-home-middle-s {
+	    top: -130px;
+	}
+	.cont-home-middle-s img.tg1{
+		max-width: 370px;
+	}
+
+	.listing-cont-btm-homes .items.bd-r.disable-border-ipad{
+		border-right: 0px;
+		background: none;
+	}
+	.listing-cont-btm-homes .items span.names {
+	    font-size: 16px;
+	    min-height: 40px;
+	    display: block;
+	}
+	.custom-picture-abouts{}
+	.custom-picture-abouts .pr-10{ padding-right: 0; }
+	.custom-picture-abouts .cont-desc{
+		padding: 0 2em;
+	}
+	.custom-picture-abouts .cont-desc .text-middle{
+		font-size: 17px;
+	}
+
+	section#contact_section .insides-section,
+	section.inside-page .insides-section{
+		padding: 10% 0;
+	}
+	.setup-about-middle-custom-ct .list.left-p .desc,
+	.setup-about-middle-custom-ct .list .desc{
+		position: relative;
+		top: 0px;
+		width: auto;
+		min-height: auto;
+		padding-bottom: 4em;
+	}
+	.setup-about-middle-custom-ct .list .desc .height-40{ height: 0; }
+	.setup-about-middle-custom-ct .list.left-p .pict{
+		float: none;
+	}
+	.setup-about-middle-custom-ct .list.left-p .desc{
+		top: 0px;
+	}
+	.setup-about-middle-custom-ct .tagline-right{
+		width: auto;
+		float: none;
+	}
+	.listing-people-leadership-t .items{
+		max-width: 395px;
+	}
+	.listing-people-leadership-t .items .pict img{
+		max-width: 100%; margin: 0 auto;
+	}
+	.listing-people-leadership-t .items .titles span{
+		text-align: center;
+	}
+	footer.inside-section .ins_footer span.d-inline.t-footers{
+		font-size: 18px;
+	}
+	
+}
+
+@media (max-width: 980px){
+	
+	body.inside .bt-showleft_menu, body.inside .left-panel{
+		position: fixed;
+		height: 100%;
+		float: none; top:0px; left: 0px;
+	}
+	.right-panel{
+		margin-left: 0px !important;
+	}
+	footer.inside-section .ins_footer{
+		height: auto;
+		padding-bottom: 1em;
+	}
+	footer.inside-section .d-inline{
+		display: block;
+	}
+	footer.inside-section .ins_footer .lines-Ftoers{
+		display: none;
+	}
+	footer.inside-section .ins_footer span.d-inline.t-footers{
+		padding-bottom: 10px;
+	}
+
+}
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+	.page_careers{ max-width: 615px; }
+}
+
+@media (max-width: 768px){
+	.page_careers{ max-width: 615px; }
+		
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+	
+	.show_leftmenu{}
+	.show_leftmenu img{ max-width: 100%; }
+	.bt-showleft_menu{
+		width: 40px;
+	}
+	.t-copyrights{
+		left: 12px;
+	}
+	.right-panel{
+		margin-left: 50px !important;
+	}
+	.left-panel .inside .height-50{
+		height: 0;
+	}
+	.left-panel .inside .cont-footer-left-panel p {
+	    font-size: 11px;
+	    line-height: 1.1;
+	    margin-bottom: 10px;
+	}
+	.left-panel .inside .cont-footer-left-panel .social-footers {
+	    max-width: 135px;
+	    padding-bottom: 10px;
+	}
+	.cont-footer-left-panel{
+		bottom: 10px;
+	}
+	.right-cont-blackfull-leftcnt{
+		width: 40px;
+	}
+	a.hide_leftmenu img{
+		max-width: 100%;
+	}
+	.left-panel{
+		width: 278px;
+	}
+	.back-left-menu ul li {
+	    padding: 7px 0;
+	}
+	.back-left-menu ul li a{
+		font-size: 14px;
+	}
+
+	.left-panel .inside .cont-footer-left-panel .social-footers a.i-social{
+		border: 1px solid #fff;
+		padding: 0;
+		width: 22px;
+		height: 22px;
+	}
+	.left-panel .inside .cont-footer-left-panel .social-footers a.i-social > i.fa{
+		font-size: 11px;
+	}
+	.top-ins-topss-cont{
+		padding: 0 1em;
+	}
+	section.inside-page .insides-section .top-ins-topss-cont p {
+	    font-size: 15px;
+	}
+
+	.wrapperinside,
+	body.bhome{
+		overflow: inherit;
+	}
+	.back-cover-fcs.bridal-about{
+		width: auto !important;
+	}
+	.outers-cont-bottm-home,
+	.outers_content-mid-home {
+	    position: relative;
+	    height: auto;
+	    width: auto;
+	    top: inherit;
+	    left: inherit;
+	}
+	.table-outes .table-in,
+	.outers_content-mid-home .table-outes{
+		display: block;
+		width: auto;
+		height: auto;
+	}
+	.outers-fcs-slider{
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		z-index: 15;
+	}
+	.cont-home-middle-s{
+		top: inherit;
+		padding: 0 1em;
+	}
+	.cont-home-middle-s h1.title{
+		max-width: 150px;
+		margin: 0 auto;
+		padding-top: 20px;
+	}
+	.cont-home-middle-s img{
+		max-width: 100% !important;
+	}
+	.outers-cont-bottm-home .padding-bottom-40 {
+	    padding-left: 0px;
+	    padding-right: 0em;
+	}
+	.listing-cont-btm-homes .items {
+		background: none;
+	    padding: 0px 0px 3em;
+	}
+	.listing-cont-btm-homes .items:last-child{
+		padding-bottom: 20px;
+	}
+	.listing-cont-btm-homes .items.bd-r{
+		background: none;
+	}
+	.listing-cont-btm-homes{
+		padding-top: 5em;
+	}
+
+	.bt-showleft_menu{
+		position: fixed;
+	}
+	.outers-cont-bottm-home .padding-bottom-40{ padding-bottom: 0; }
+	.left-panel .inside .cont-footer-left-panel p {
+	    line-height: 1.3;
+	    margin-bottom: 8px;
+	}
+	.content-text{
+		padding: 0 1.2em;
+	}
+	.content-text h5{ font-size: 20px; }
+	.custom-picture-abouts .cont-desc{
+		padding: 3em 1em; height: auto;
+	}
+	.pl-10,.pr-10{ padding: 0px; }
+	section#contact_section .insides-section, 
+	section.inside-page .insides-section {
+	    padding: 4em 0;
+	}
+	.custom_ak-pict{ display: none; }
+	.pos-abs-full{
+		position: relative; width: auto; height: auto; top: inherit; left: inherit;
+	}
+	section#outer-menu .insides-section .listing-menu .items .desc{
+		display: block; width: auto; height: auto;
+	}
+	section#outer-menu .insides-section .listing-menu .items .desc .table-in {
+	    display: block;
+	    vertical-align: middle;
+	    text-align: center;
+	    padding: 2em 1.5em;
+	}
+	section#outer-menu .insides-section .listing-menu .items .desc .table-in p{
+		font-size: 15px;
+	}
+	section#outer-menu .insides-section .listing-menu .items .desc .table-in span.name{
+		font-size: 25px;
+	}
+	.contact-form{
+		overflow: hidden;
+		padding: 0 1em;
+	}
+	.cont-home-middle-s{
+		padding-top: 9em;
+	}
+	.cont-home-middle-s h1.title{
+		max-width: 190px;
+	}
+
+	
+	.bt-showleft_menu{
+		width: 50px;
+	}
+	.bt-showleft_menu a{
+		padding: 0 5px;
+	}
+	.listing-people-leadership-t .items{
+		max-width: 295px;
+	}
+	.back-cream-inside{
+		padding-left: 0px !important;
+	}
+	footer.inside-section .ins_footer .fright.margin-top-m5{
+		float: none; margin: 10px 0px 10px 2.1em;
+	}
+	section.inside-page .insides-section .top-ins-topss-cont.page_careers .box-form form .form-group{
+		margin-right: 0;
+	}
+	section.inside-page .insides-section .top-ins-topss-cont.page_careers .box-form form button.btns-submit-bt{
+		float: left; margin-left: 0;
+	}
+	section.inside-page .insides-section .top-ins-topss-cont.page_careers .box-form .fright.margin-left-30{
+		float: none; margin-left: 0;
+	}
+	section.inside-page .insides-section .top-ins-topss-cont.page_careers p{
+		font-size: 14px;
+	}
+	.mw-940{
+		padding: 0 0.5em;
+	}
+	.setup-about-middle-custom-ct {
+	    padding: 0 1.3em;
+	}
+
+	.setup-about-middle-custom-ct .list .desc{
+		padding-left: 10px;
+		padding-right: 10px;
+		text-align: center;
+		padding-bottom: 2.5em;
+	}
+	.setup-about-middle-custom-ct .list .desc h3{
+		font-size: 25px; text-align: center;
+	}
+	.setup-about-middle-custom-ct .list .desc small,
+	.setup-about-middle-custom-ct .list .desc p{
+		text-align: center;
+	}
+	.setup-about-middle-custom-ct .tagline-right,
+	.setup-about-middle-custom-ct .list{
+		margin-bottom: 4em;
+	}
+	.setup-about-middle-custom-ct .tagline-right .prelatife span.start_tc{
+		top: -15px;
+	}
+	.setup-about-middle-custom-ct .tagline-right .prelatife span.end_tc{
+		right: 0px; bottom: -15px;
+	}
+
+	body.inside .bt-showleft_menu{
+		z-index: 1000;
+	}
+
+	.pos-abs-fulls .table-outer,
+	.pos-abs-fulls{
+		position: relative;
+	}
+	.desc-about-4bottom{
+		background-color: rgb(0, 0, 0); padding: 2em 1.8em;
+	}
+	.desc-about-4bottom p{
+		line-height: 1.5; font-size: 15px;
+	}
+	.outers-dt-listingCOnt-services .items{
+		padding: 0 0.5em;
+	}
+	.outers-dt-listingCOnt-services .items .pict-left{
+		position: relative; margin: 0 auto; text-align: center;
+	}
+	.outers-dt-listingCOnt-services .items .pict-left img{
+		margin: 0 auto; text-align: center; display: block;
+	}
+
+	.outers-dt-listingCOnt-services .items .cont-white-left{
+		margin-left: 0px;
+		margin-top: 1em;
+		padding: 2em 1em; text-align: center;
+	}
+	.outers-dt-listingCOnt-services .items .cont-white-left h4{
+		font-size: 22px;
+	}
+	.outers-dt-listingCOnt-services .items{
+		margin-bottom: 0;
+	}
+	.listing-people-leadership-t .items{
+		padding: 0 1.5em; margin-bottom: 2em; min-height: inherit;
+	}
+	.bottom-cont-leadership .top-sbtitle span{
+		font-size: 23px; line-height: 1.4; padding: 0px 0.5em;
+	}
+
+	body.inside .left-panel{
+		z-index: 10000;
+	}
+	footer.inside-section .ins_footer span.d-inline.t-footers{
+		font-size: 15px !important;
+	}
+	section.inside-page .insides-section .top-ins-topss-cont h4{
+		font-size: 23px; line-height: 1.2;
+	}
+	section.inside-page .insides-section .top-ins-topss-cont span{
+		font-size: 20px;
+	}
+	.listing-people-leadership-t .items p{
+		text-align: center;
+	}
+
+	.back-left-menu.closer,
+	.left_line_menu{
+		display: none;
+	}
+	.left-panel .inside .cont-footer-left-panel p a{
+		font-size: 12px;
+	}
+	.lgo-web-inside-leftpanel{
+		padding-top: 10px;
+	}
+
+	.page_projects .listing-projects-dt .item, .page_projects .listing-projects-dt .items{
+		margin-left: 0;
+	}
+	.page_projects .sub_cmenu_projects ul li {
+	    padding: 5px 0px;
+	    display: block;
+	}
+	.left-panel .inside {
+	    padding-top: 0px;
+	}
+
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 600px) {
+	
+	.cont-home-middle-s h1.title span.tagline-home{
+		font-size: 10px;
+	}
+
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+
+	
+
+}
+@media (max-width: 360px) {
+
+}

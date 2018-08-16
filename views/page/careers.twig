@@ -1,0 +1,93 @@
+{% extends layout %}
+{% block title %}Careers Archimetric - Architects & Engineers - Surabaya, Indonesia{% endblock %}
+{% block menu %}about{% endblock %}
+{% block content %}
+	<div class="right-panel">
+		<div class="back-cream-inside prelatife">
+			
+			<section id="top-page-inside" class="inside-page">
+				<div class="insides-section1 mw-1275 tengah prelatife text-center">
+					<div class="logo-center">
+						<img src="{{ app.request.baseurl }}/asset/images/logo-archimetric-insidepage.png" alt="" class="img-responsive pc-center">
+						<div class="clear"></div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</section>
+
+			<section id="default" class="inside-page">
+				<div class="insides mw-1275 tengah prelatife text-center">
+
+						<div class="top-ins-topss-cont page_careers">
+							<h1 class="title-page">CAREERS</h1>
+							<div class="clear height-15"></div>
+
+							<div class="lines-black-about-tops-pg tengah"></div>
+							<div class="clear height-50"></div>
+							<div class="height-30"></div>
+
+							{# start careers #}
+							<div class="content-text text-left">
+								<div class="row">
+									<div class="col-md-12 col-lg-6">
+										<div class="fright picts-right padding-right-15">
+											<img src="{{ app.request.baseurl }}/admin/images/static/{{ get_setting.career_image }}" alt="" class="img-responsive">	
+										</div>
+									</div>
+									<div class="col-md-12 col-lg-6">
+										<div class="padding-left-15">
+											{{ get_setting.career_content|raw }}
+											{# <p>You may also forward your application to:</p>
+											<h4>PT. ARCHIMETRIC <br>
+												HRD Department</h4>
+											<p>Jl. Raya Manyar Tirtomoyo 7 <br>
+												Surabaya 60118, Indonesia</p> #}
+											<div class="clear"></div>
+										</div>
+									</div>
+								</div>
+								<div class="clear height-50"></div>
+								<div class="clear height-50"></div>
+								<div class="clear"></div>
+							</div>
+							{# end careers #}
+
+							<div class="clear"></div>
+						</div>
+					
+					<div class="clear"></div>
+				</div>
+			</section>
+			
+			{% include "/layouts/footer_bottom_insides.twig" %}
+			<div class="clear"></div>
+		</div>
+		<div class="clear"></div>
+	</div>
+{# end container #}
+<script type="text/javascript">
+	$(document).ready(function(){
+		$.getScript('//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/1.5.25/jquery.isotope.min.js',function(){
+
+		  $('#posts').imagesLoaded( function(){
+		    $('#posts').isotope({
+		      itemSelector : '.item'
+		    });
+		  });
+		  
+		});
+	})
+</script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.15/css/lightgallery.css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.15/js/lightgallery-all.min.js"></script>
+<script>
+	 $(document).ready(function() {
+		$(".light-gallery").lightGallery({
+			thumbnail:false,
+		    animateThumb: false,
+		    showThumbByDefault: false
+		});
+	});
+</script>
+{% endblock %}

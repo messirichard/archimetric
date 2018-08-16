@@ -1,0 +1,68 @@
+<header class="head hidden-xs">
+<div class="prelatife container">
+		<div class="wrap-header prelatife">
+			<div class="clear height-25"></div>
+			<div class="height-4"></div>
+			<div class="logo-top">
+				<div class="d-inline-block">
+				<a href="{{ url('homepage') }}"><img src="{{ app.request.baseurl }}/asset/images/logo-gartner.png" alt="logo gartner"></a>
+				</div>
+				<div class="d-inline-block thespeligh"><img src="{{ app.request.baseurl }}/asset/images/back-thspecialis.png" alt="The lighting specialist"></div>
+			</div>
+			<div class="clear height-20"></div>
+			<div class="height-4"></div>
+			<div class="fleft hd-menu">
+				<div class="top-menu">
+					<ul>
+						<li class="{% if menu == 'homepage' %}active{% endif %}"><a href="{{ url('homepage') }}">Home</a></li>
+						<li class="{% if menu == 'product' %}active{% endif %}"><a href="{{ url('product') }}">PRODUCTS</a></li>
+						<li class="{% if menu == 'agent' %}active{% endif %}"><a href="{{ url('agent') }}">BECOME AGENT</a></li>
+						{# <li class="{% if menu == 'distributor' %}active{% endif %}"><a href="{{ url('distributor') }}">OUR DISTRIBUTORS</a></li> #}
+						<li class="{% if menu == 'about' %}active{% endif %}"><a href="{{ url('about') }}">COMPANY</a></li>
+						<li class="{% if menu == 'contact' %}active{% endif %}"><a href="{{ url('contactus') }}">CONTACT US</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="fright right-headers">
+				<div class="telp-info"><span>CALL US NOW</span>&nbsp;   0812 3339 8600</div>
+				<div class="iln-back-headright"><img src="{{ app.request.baseurl }}/asset/images/pict-warranty-heder-right.png" alt="10 years replacement warranty"></div>
+			</div>
+			
+			<div class="clear"></div>
+		</div>
+	<div class="clear"></div>
+</div>
+</header>
+	{# header responsive #}
+	<div class="visible-xs headerrespon">
+		<nav class="navbar navbar-default" role="navigation">
+		  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="{{ url('homepage') }}">
+		      	<img src="{{ app.request.baseurl }}/asset/images/lgo-gartner-respons.png" alt="logo gartner">
+		      </a>
+		    </div>
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      
+		      <ul class="nav navbar-nav navbar-right">
+		        <li class="{% if menu == 'homepage' %}active{% endif %}"><a href="{{ url('homepage') }}">Home</a></li>
+				<li class="{% if menu == 'product' %}active{% endif %}"><a href="{{ url('product') }}">PRODUCTS</a></li>
+				<li class="{% if menu == 'agent' %}active{% endif %}"><a href="{{ url('agent') }}">BECOME AGENT</a></li>
+				{# <li class="{% if menu == 'distributor' %}active{% endif %}"><a href="{{ url('distributor') }}">OUR DISTRIBUTORS</a></li> #}
+				<li class="{% if menu == 'about' %}active{% endif %}"><a href="{{ url('about') }}">COMPANY</a></li>
+				<li class="{% if menu == 'contact' %}active{% endif %}"><a href="{{ url('contactus') }}">CONTACT US</a></li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+		<div class="clear"></div>
+	</div>

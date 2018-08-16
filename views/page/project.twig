@@ -1,0 +1,122 @@
+{% extends layout %}
+{% block title %}Projects Archimetric - Architects & Engineers - Surabaya, Indonesia{% endblock %}
+{% block menu %}about{% endblock %}
+{% block content %}
+	<div class="right-panel">
+		<div class="back-cream-inside prelatife">
+			
+			<section id="top-page-inside" class="inside-page">
+				<div class="insides-section mw-1275 tengah prelatife text-center">
+					<div class="logo-center">
+						<img src="{{ app.request.baseurl }}/asset/images/logo-archimetric-insidepage.png" alt="" class="img-responsive pc-center">
+						<div class="clear"></div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</section>
+
+			<section id="default" class="inside-page">
+				<div class="insides tengah prelatife text-center containers_gallery">
+
+						<div class="top-ins-topss-cont page_projects">
+							<h1 class="title-page"></h1>
+							<div class="clear height-0"></div>
+							{# <div class="lines-black-about-tops-pg tengah"></div>
+							<div class="clear height-25"></div> #}
+							{% if get_lcategory %}
+							<div class="sub_cmenu_projects text-center">
+								<ul class="list-inline">
+									{% for key, d_category in get_lcategory %}
+									<li {% if d_category.id == category_id %}class="active"{% endif %}><a href="{{ url('project', {category: d_category.id }) }}">{{ d_category.name|upper }}</a></li>
+									{% endfor %}
+								</ul>
+							</div>
+							{% endif %}
+							<div class="clear height-50"></div>
+							<div class="height-10"></div>
+
+							{# start project #}
+							<div class="container_baru outers_projectr_slt">
+								{% if data %}
+								<div class="listing-projects-dt" id="posts">
+											{% for kl, results_g in data %}
+												<div class="item">
+													<ul id="light-gallery" class="gallery light-gallery" style="list-style:none;margin:0px; padding:0;">
+														<li data-sub-html="{{ results_g.title }}" data-src="{{ app.request.baseurl }}/admin/images/gallery/{{ results_g.image }}">
+															<a href="{{ app.request.baseurl }}/admin/images/gallery/{{ results_g.image }}">
+																<img src="{{ app.request.baseurl }}/admin/images/gallery/{{ results_g.image }}" alt="data project" class="img-responsive">
+															</a>
+														</li>
+														{% if results_g.sub_image %}
+															{% for k_sub, res_sub in results_g.sub_image %}
+															 <li data-sub-html="{{ results_g.title }}" data-src="{{ app.request.baseurl }}/admin/images/gallery/{{ res_sub }}">
+																	<a href="{{ app.request.baseurl }}/admin/images/gallery/{{ res_sub }}">
+																	</a>
+																</li>   
+															{% endfor %}
+														{% endif %}
+													</ul>
+													</div>
+											{% endfor %}
+										
+									{# <div class="row" id="posts">
+										{% for i in 1..10 %}
+										<div class="col-md-3 item">
+											<div class="items">
+												<div class="pict">
+													<img src="{{ app.request.baseurl }}/asset/images/project/project-{{ i }}.jpg" alt="data project" class="img-responsive">
+												</div>
+											</div>
+										</div>
+										{% endfor %}
+									</div> #}
+								</div>
+								{% else %}
+								<h3>No Data Project</h3>
+								<div class="clear h450"></div> 
+								{% endif %}
+								{# end project #}
+								<div class="clear"></div>
+							</div>
+
+							<div class="clear"></div>
+						</div>
+					
+					<div class="clear"></div>
+				</div>
+			</section>
+			
+			{% include "/layouts/footer_bottom_insides.twig" %}
+			<div class="clear"></div>
+		</div>
+		<div class="clear"></div>
+	</div>
+{# end container #}
+<script type="text/javascript">
+	$(document).ready(function(){
+		$.getScript('//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/1.5.25/jquery.isotope.min.js',function(){
+
+		  $('#posts').imagesLoaded( function(){
+		    $('#posts').isotope({
+		      itemSelector : '.item', 
+		      //percentPosition: true,
+		      //columnWidth: '200px'
+		    });
+		  });
+		  
+		});
+	});
+</script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.15/css/lightgallery.css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.15/js/lightgallery-all.min.js"></script>
+<script>
+	 $(document).ready(function() {
+		$(".light-gallery").lightGallery({
+			thumbnail:false,
+		    animateThumb: false,
+		    showThumbByDefault: false
+		});
+	});
+</script>
+{% endblock %}

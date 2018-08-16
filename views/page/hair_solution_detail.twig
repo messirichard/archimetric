@@ -1,0 +1,141 @@
+{% extends layout %}
+{% block title %}Our Solution {% if data.category %}- {{ data.category|capitalize }}{% endif %} - Gester - Hair Salon{% endblock %}
+{% block menu %}homepage{% endblock %}
+{% block content %}
+	<div class="right-panel back-ins-collection-outer">
+		
+		{# inner text col #}
+		<div class="padding-outer-scroll">
+			
+			{# -------- Start Inset detail collection -------- #}
+			<div class="innset-detail-collection">
+
+				<div class="left-first-collectiondetail margin-left-30">
+					<div class="insides topcright">
+		         		<div class="clear height-185"></div>
+						<div class="top-title collection-list">
+							<h3 title="{{ data.category }}">{{ data.category }}</h3> 
+							<div class="clear"></div>
+							<span title="{{ data.title }}">{{ data.title }}</span>
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div class="clear height-25"></div>
+						<div class="col-alternateview-detail">
+							<span>Alternate View</span> <div class="clear height-15"></div>
+							<div class="list-data-alternate">
+								<div class="item">
+									<a href="{{ url('hair_salon/solution-detail', { 'id':data.nomer_id, 'sub_image':0, 'category' : data.category|capitalize, 'title' : data.title}) }}">
+										<img src="{{ app.request.baseurl }}/image.php/{{ data.image }}?width=70&amp;height=70&amp;cropratio=1:1&amp;image=/example_file/hair-salon/{{ data.image }}" alt="">
+									</a>
+								</div>
+								<div class="item">
+									<a href="{{ url('hair_salon/solution-detail', { 'id':data.nomer_id, 'sub_image':1, 'category' : data.category|capitalize, 'title' : data.title}) }}">
+										<img src="{{ app.request.baseurl }}/image.php/hair-salon3.jpg?width=70&amp;height=70&amp;cropratio=1:1&amp;image=/example_file/hair-salon/hair-salon3.jpg" alt="">
+									</a>
+								</div>
+								<div class="clear"></div>
+							</div>
+							<div class="clear height-20"></div>
+							<div class="dl-block-sharer">
+								<div class="clear"></div>
+								<div class="lines-grey"></div>
+								<div class="clear height-10"></div>
+								<div class="text">
+									Share &nbsp;| &nbsp;<i class="fa fa-facebook"></i>&nbsp; | &nbsp;<i class="fa fa-twitter"></i>&nbsp; | &nbsp;<i class="fa fa-paper-plane"></i>&nbsp; |
+								</div>
+								<div class="clear height-10"></div>
+								<div class="lines-grey"></div>
+								<div class="clear"></div>
+								<div class="clear height-15"></div>
+								<div class="height-3"></div>
+								<a href="javascript: return false;"><img src="{{ app.request.baseurl }}/asset/images/button_appointment.png" alt="REQUEST AN APPOINTMENT - Gester Bridal"></a>
+								<div class="clear height-15"></div>
+								<div class="height-3"></div>
+								<div class="lines-grey"></div>
+							</div>
+							<div class="clear height-50"></div>
+							<div class="height-35"></div>
+							
+							<div class="w223x">
+								<div class="tengah text-center pagin-detailcollect">
+									{% if data.prev %}
+									<a href="{{ url('hair_salon/solution-detail', { 'id':data.prev, 'sub_image':0, 'category' : data.category|capitalize, 'title' : data.title}) }}">
+									{% else %}
+									<a href="javascript: return false;">
+									{% endif %}
+										<img src="{{ app.request.baseurl }}/asset/images/chev-pag-left.png" alt="">
+									</a>&nbsp;&nbsp;0{{ data.nomer_id }} / 0{{ data.jumlah_data }}&nbsp;&nbsp;
+									{% if data.next %}
+									<a href="{{ url('hair_salon/solution-detail', { 'id':data.next, 'sub_image':0, 'category' : data.category|capitalize, 'title' : data.title}) }}">
+									{% else %}
+									<a href="javascript: return false;">
+									{% endif %}
+										<img src="{{ app.request.baseurl }}/asset/images/chev-pag-right.png" alt="">
+									</a>
+								</div>
+							</div>
+
+							<div class="clear"></div>
+						</div>
+						
+				<div class="clear"></div>
+				</div>
+				{# End first left collectdetail #}
+				<div class="col-big-picture-middle">
+					{% if data.sub_image == 0 %}
+						<img src="{{ app.request.baseurl }}/image.php/{{ data.image }}?width=1350&amp;height=768&amp;image=/example_file/hair-salon/{{ data.image }}" alt="gester bridal">
+					{% else %}
+						<img src="{{ app.request.baseurl }}/image.php/{{ data.sub_imagep }}?width=1350&amp;height=768&amp;image=/example_file/hair-salon/{{ data.sub_imagep }}" alt="gester bridal">
+					{% endif %}
+				</div>
+				<div class="col-numbber-desc_gest fleft padding-left-20">
+					<div class="titleds padding-top-20">
+						0{{ data.nomer_id }}
+					</div>
+					<div class="clear"></div>
+					<div class="titleds2">
+						<span>Hair Solution</span>
+					</div>
+					<div class="clear height-15"></div>
+					<div class="bck-collction"><a href="{{ url('hair_salon/solution', {'id' : '1', 'category': data.category, 'title' : data.title }) }}">Back to Hair Solution</a></div>
+				</div>
+
+				<div class="clear"></div>
+			</div>
+			{# -------- End Inset detail collection -------- #}
+
+			<div class="clear"></div>
+		</div>
+		{# End inner text col #}
+
+		<div class="clear"></div>
+	</div>
+{# end container #}
+<script type="text/javascript">
+	$(window).resize(function() {
+	    var newWindowHeight = $(window).height();
+	    if (newWindowHeight > 768){
+	    	$('.col-big-picture-middle img').css('height', newWindowHeight+'px');
+	    }
+	});
+	$(window).load(function() {
+	    var newWindowHeight = $(window).height();
+	    if (newWindowHeight > 768){
+	    	$('.col-big-picture-middle img').css('height', newWindowHeight+'px');
+	    }
+	});
+</script>
+<style type="text/css">
+	.bck-collction a{
+		color: #8D8D8D;
+		font-size: 14px;
+		text-decoration: underline;
+	}
+	.bck-collction a:hover,
+	.bck-collction a:focus{
+		color: #8D8D8D;
+		text-decoration: none;
+	}
+</style>
+{% endblock %}

@@ -1,0 +1,79 @@
+{% extends layout %}
+{% block title %}Gester Bridal Boutique and Hair Salon{% endblock %}
+{% block menu %}homepage{% endblock %}
+{% block content %}
+	<div class="cover-slides-fullbackground"></div>
+	<div class="cover-slides-fullbackground2"></div>
+	<table border="0" width="100%" height="100%" id="table3" cellspacing="0" cellpadding="0" style="height: 100%; position: relative; z-index: 1000;">
+  		<tr>
+  			<td style="vertical-align: middle; height: 100%;" align="center">
+  				<table border="0" cellspacing="0" cellpadding="0">
+  					<tr>
+  						<td>
+  							<div class="outer-coverpage">
+							    <div class="wrapper-outer-coverpages">
+							    	<div class="content">
+							    		<div class="clear height-35"></div>
+											<div class="row">
+												<div class="col-md-6 col-lg-6 col-sm-6 col-xs-12 first">
+													<div class="clear height-20"></div>
+													<div class="text-center tengah lgo-coverchoice">
+														<a href="{{ url('bridal') }}" class="hover-link-logo" data-id="1"><img class="img_bridal" src="{{ app.request.baseurl }}/asset/images/cover-logo-gester-bridal.png" alt="logo gester bridal"></a>
+													</div>
+												</div>
+												<div class="col-md-6 col-lg-6 col-sm-6 col-xs-12 border-left">
+													<div class="clear height-20"></div>
+													<div class="text-center tengah lgo-coverchoice">
+														<a href="{{ url('hair_salon') }}" class="hover-link-logo" data-id="2"><img class="img_hairsalon" src="{{ app.request.baseurl }}/asset/images/cover-logo-gester-hairsalon.png" alt="logo gester hair salon"></a>
+													</div>
+												</div>
+											</div>
+											<div class="clear"></div>
+							    		<div class="clear"></div>
+							    	</div>
+							    </div>
+						    </div>
+  						</td>
+  					</tr>
+  				</table>
+  			</td>
+  		</tr>
+  	</table>
+{# end container #}
+<script type="text/javascript">
+	$(window).load(function(){
+		$('.cover-slides-fullbackground2').css("opacity", "0");
+	});
+
+	$(document).ready(function(){
+		$('.hover-link-logo').live('mouseenter', function(){
+			var setactive = $(this).attr('data-id');
+			if (setactive == 1){
+				var img1 = $(this).find('img').attr('src');
+				var newimg1 = '{{ app.request.baseurl }}/asset/images/cover-logo-gester-bridal-active.png';
+				
+				var newimg3 = '{{ app.request.baseurl }}/asset/images/cover-logo-gester-hairsalon.png';
+				$('img.img_hairsalon').attr('src', newimg3);
+				$('img.img_bridal').attr('src', newimg1);
+
+				// change background body
+				$('.cover-slides-fullbackground2').animate({"opacity": '0'},100);
+				$('.cover-slides-fullbackground').animate({"opacity": '1'},400);
+			}else{
+				var newimg12 = '{{ app.request.baseurl }}/asset/images/cover-logo-gester-bridal.png';
+				$('img.img_bridal').attr('src', newimg12);
+
+				var img2 = $(this).find('img').attr('src');
+				var newimg2 = '{{ app.request.baseurl }}/asset/images/cover-logo-gester-hairsalon-active.png';
+				$('img.img_hairsalon').attr('src', newimg2);
+
+				// change background body
+				$('.cover-slides-fullbackground').animate({"opacity": '0'},100);
+				$('.cover-slides-fullbackground2').animate({"opacity": '1'},400);
+			}
+
+			return false;
+		})
+	});
+</script>
+{% endblock %}

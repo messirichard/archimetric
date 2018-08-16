@@ -1,0 +1,124 @@
+<div class="bt-showleft_menu">
+	<a href="#" class="show_leftmenu">&nbsp;&nbsp;<i class="fa fa-navicon"></i>&nbsp;&nbsp;</a>
+</div>
+<div class="left-panel">
+	<div class="inside">
+		<div class="top-left-panel">
+			<div class="fleft">
+				<a href="{{ url('homepage') }}"><i class="fa fa-home"></i> &nbsp;HOME</a>
+			</div>
+			<div class="fright">
+				<a href="#" class="hide_leftmenu">HIDE MENU &nbsp;<i class="fa fa-navicon"></i></a>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="clear height-50"></div>
+		<div class="height-50"></div>
+		<div class="lgo-web-inside-leftpanel">
+			<div class="tengah text-center">
+				<a href="{{ url('bridal') }}"><img src="{{ app.request.baseurl }}/asset/images/web-bridal/lgo-web-bridal.png" alt="Logo Bridal Boutique"></a>
+				<div class="clear height-15"></div>
+				<div class="height-3"></div>
+				<div class="text">
+					Jakarta&nbsp;&nbsp;|&nbsp;&nbsp;Surabaya&nbsp;&nbsp;|&nbsp;&nbsp;Malang
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="clear height-50"></div>
+		<div class="height-10"></div>
+		
+		<div class="back-left-menu text-center tengah">
+			<div class="lines-gk tengah text-center"></div>
+			<div class="clear height-25"></div>
+			<ul class="list-unstyled hidden-xs">
+				<li class="{% if menu == 'about' %}active{% endif %}"><a href="{{ url('bridal/about') }}">ABOUT US</a></li>
+				<li class="sub_collection"><a href="#">COLLECTIONS</a></li>
+				<li class="{% if menu == 'boutique' %}active{% endif %}"><a href="{{ url('bridal/boutique') }}">OUR BOUTIQUES</a></li>
+				<li class="{% if menu == 'appoint' %}active{% endif %}"><a href="{{ url('bridal/appointment') }}">APPOINTMENT</a></li>
+			</ul>
+			<div class="visible-xs menu-hide-responsive">
+				<ul class="nav nav-pills nav-stacked">
+				  
+				 <li class="{% if menu == 'about' %}active{% endif %}"><a href="{{ url('bridal/about') }}">ABOUT US</a></li>
+				{# <li><a href="#">COLLECTIONS</a></li> #}
+				<li role="presentation" class="dropdown">
+				    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+				      COLLECTIONS <span class="caret"></span>
+				    </a>
+				    <ul class="dropdown-menu" role="menu">
+				    	{% for key2, left_mn2 in left_menu_brd %}
+				    		{% for ky2, left_dta2 in left_mn2 %}
+				      			<li><a href="{{ url('bridal/collection', {'id' : left_dta2.id, 'category' : left_dta2.category, 'title' : left_dta2.title}) }}">{{ left_dta2.name }}</a></li>
+				      		{% endfor %}
+				      	{% endfor %}
+				    </ul>
+			  	</li>
+
+				<li class="{% if menu == 'boutique' %}active{% endif %}"><a href="{{ url('bridal/boutique') }}">OUR BOUTIQUES</a></li>
+				<li class="{% if menu == 'appoint' %}active{% endif %}"><a href="{{ url('bridal/appointment') }}">APPOINTMENT</a></li>
+
+				</ul>
+			<div class="clear"></div>
+			</div>
+
+			<div class="clear height-25"></div>
+			<div class="lines-gk tengah text-center"></div>
+			<div class="clear"></div>
+		</div>
+		
+		<div class="cont-footer-left-panel">
+			<div class="prelatife cont-inside">
+				<div class="top">Customer Service</div>
+				<div class="clear height-5"></div>
+				<div class="bottom text-center tengah">
+				031 . 503 1000  /  081 945115 777 <br>
+    			{# <a href="mailto:info@gesterbridal-salon.com">info@gesterbridal-salon.com</a> #}
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+
+		<div class="clear"></div>
+	</div>
+
+	<div id="sub_menuCollection" class="left-menuhover2-sty">
+		<div class="insd">
+			<div class="clear height-50"></div>
+			<div class="height-50"></div>
+			<div class="height-50"></div>
+			<div class="height-50"></div>
+			<div class="height-10"></div>
+			<div class="list-data-collction text-center tengah">
+				{% for key, left_mn in left_menu_brd %}
+				<div class="item">
+					<div class="title">{{ key }}</div>
+					<div class="clear height-15"></div>
+					<ul class="list-unstyled">
+						{% for ky, left_dta in left_mn %}
+						<li><a href="{{ url('bridal/collection', {'id' : left_dta.id, 'category' : left_dta.category, 'title' : left_dta.title}) }}">{{ left_dta.name }}</a></li>
+						{% endfor %}
+					</ul>
+				</div>
+				{% endfor %}
+				{# <div class="item">
+					<div class="title">COLLECTION 2015</div>
+					<div class="clear height-15"></div>
+					<ul class="list-unstyled">
+						<li><a href="{{ url('bridal/collection', {'id' : '1', 'category' : 'collection-2015', 'title' : 'royal-haute-couture'}) }}">Royal Haute Couture</a></li>
+					</ul>
+				</div> #}
+				{# <div class="item">
+					<div class="title">COLLECTION 2014</div>
+					<div class="clear height-15"></div>
+					<ul class="list-unstyled">
+						<li><a href="{{ url('bridal/collection', {'id' : '1', 'category' : 'collection-2014', 'title' : 'inspirational-wedding'}) }}">Inspirational Wedding</a></li>
+					</ul>
+				</div> #}
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+
+	<div class="clear"></div>
+</div>

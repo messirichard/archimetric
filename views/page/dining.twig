@@ -1,0 +1,138 @@
+{% extends layout %}
+{% block title %}Dining - DAUNI Lifestyle Center - Dining Shopping Spa &amp; Beauty Clinic{% endblock %}
+{% block menu %}dining{% endblock %}
+{% block content %}
+	<div class="wrapper-cslide-outer inside back-dining">
+		<div class="prelatife container">
+			<div class="inner-illustrasi-top prelatife h208">
+				{# <img src="{{ app.request.baseurl }}/asset/images/ill-dining.jpg" alt=""> #}
+				<div class="block-breadcumb">
+					<span class="text"><a href="{{ url('homepage') }}">Home</a> / <i>Dining</i></span>
+				</div>
+
+				<div class="block-shareheader">
+					<div class="share-footer header">
+						<span>SHARE THIS PAGE</span>
+						<div class="clear height-5"></div>
+						<div class="list-social">
+							{% set linkh = url("homepage") %}
+							{# fb #}
+							<a target="_blank" href="https://www.facebook.com/sharer.php?u={{ linkh }}"><i class="icon-fb-footer-group"></i></a>&nbsp;
+							{# twitter #}
+							<a target="_blank" href="https://twitter.com/intent/tweet?original_referer={{ linkh|url_encode }}&related=anywhereTheJavascriptAPI&text=DAUNI Lifestyle Center - Dining Shopping Spa &amp; Beauty Clinic, DAUNI Lifestyle Center, dauni restaurant, dauni boutique, Dauni Spa &amp; Beauty Clinic&tw_p=tweetbutton&url={{ linkh|url_encode }}&via=your_screen_name"><i class="icon-twitter-footer-group"></i></a>&nbsp;
+							{# gplus #}
+							<a target="_blank" href="https://plus.google.com/share?url={{ linkh }}"><i class="icon-gplus-footer-group"></i></a>&nbsp;
+							{# email #}
+							<a target="_blank" href="mailto:info@daunilifestyle.com"><i class="icon-mail-footer-group"></i></a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="clear"></div>
+			<div class="prelatif">
+				<div class="row">
+					<div class="col-lg-9">
+						<div class="left-content content-text">
+							<div class="box-white">
+								<h2 class="titlepages">DINING AT DAUNI</h2>
+								<h1 class="t2-titlepages">A CULINARY ADVENTURE OF LAVISH GOURMET</h1>
+									<div class="gallery-ill-content">
+										<div id="carousel-gallery" class="carousel slide" data-ride="carousel">
+
+										<div class="pict-in-pages prelatif">
+											<div class="left-shadow"></div>
+											<!-- Wrapper for slides -->
+											  <div class="carousel-inner">
+
+											    <div class="item active">
+											      <img src="{{ app.request.baseurl }}/images/dining/big/dining-1.jpg" alt="Dauni - dining">
+											    </div>
+
+											    <div class="item">
+											      <img src="{{ app.request.baseurl }}/images/dining/big/dining-2.jpg" alt="Dauni - dining">
+											    </div>
+
+											    <div class="item">
+											      <img src="{{ app.request.baseurl }}/images/dining/big/dining-3.jpg" alt="Dauni - dining">
+											    </div>
+
+											    <div class="item">
+											      <img src="{{ app.request.baseurl }}/images/dining/big/dining-4.jpg" alt="Dauni - dining">
+											    </div>
+
+											  </div>
+											<div class="right-shadow"></div>
+										</div>
+										<div class="clear height-10"></div>
+										<div class="height-3"></div>
+										 
+										<div class="thumbnails">
+											<ul>
+												<li data-target="#carousel-gallery" data-slide-to="0" class="active"><img src="{{ app.request.baseurl }}/images/dining/dining-1.jpg" alt="dining dauni"></li>
+												<li data-target="#carousel-gallery" data-slide-to="1"><img src="{{ app.request.baseurl }}/images/dining/dining-2.jpg" alt="dining dauni"></li>
+												<li data-target="#carousel-gallery" data-slide-to="2"><img src="{{ app.request.baseurl }}/images/dining/dining-3.jpg" alt="dining dauni"></li>
+												<li data-target="#carousel-gallery" data-slide-to="3"><img src="{{ app.request.baseurl }}/images/dining/dining-4.jpg" alt="dining dauni"></li>
+											</ul>
+										</div>
+										<div class="pagin">
+											<a class="btn bt-left carousel-control" href="#carousel-gallery" data-slide="prev"></a>
+											<a class="btn bt-right carousel-control" href="#carousel-gallery" data-slide="next"></a>
+										</div>
+											
+											<div class="clear"></div>
+										</div>
+
+										<div class="clear"></div>
+									</div>
+
+								<div class="clear height-25"></div>
+
+								<div class="left content-insl">
+									<span>At Dauni, you will experience a special culinary sensation at its own. Explore the art of cuisine as it is practiced with complexity and culture - with classic and innovative dishes and unrivalled service and hospitality, managed by Arvada Corporation group.</span>
+
+									<p>Pairing a classic colonial interior decor and contemporary ambience, Dauni offers to guests special brunch menu, an a la carte lunch menu and a distinctive dinner of small plates and traditional selections. Dauni with its culinary, will be ready to serve all your lunch or dinner experience 7 days a week.&nbsp;</p>
+
+<p>Dauni also caters for gala dinners, corporate event &amp; meetings, and even tailored service events, let us help you plan the perfect menu &amp; events. We recognize how important your business partners and clients are to you, therefore we will work with you to create a successful event from a simple buffet to an extravagant holiday party.</p>
+									<p>&nbsp;</p>
+										
+										<div class="block-also">
+											<span class="purple">SEE ALSO:</span>&nbsp;&nbsp;&nbsp;  <a href="{{ url('shopping') }}">SHOPPING</a>   &nbsp;&nbsp;|&nbsp;&nbsp;   <a href="{{ url('spa') }}">SPA &amp; BEAUTY CLINIC</a>
+										</div>
+									<div class="clear"></div>
+								</div>
+								<div class="right hours-operation text-center">
+									<b>OPERATION HOURS</b> <br><br>
+									
+									Monday - Thursday <br>
+									11:00am - 10:00pm <br><br>
+
+									Friday - Sunday <br>
+									09:00am - 12:00pm
+									<div class="clear"></div>
+								</div>
+
+								<div class="clear"></div>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						
+						{% include "/layouts/right_content.twig" %}
+
+						<div class="clear"></div>
+					</div>
+				</div>
+
+			</div>
+			
+			<div class="clear height-45"></div>
+			<div class="height-2"></div>
+		</div>
+	</div>
+	<div class="clear"></div>
+	<div class="back-bottom-content-tfooter"></div>
+
+	<div class="clear"></div>
+{% endblock %}

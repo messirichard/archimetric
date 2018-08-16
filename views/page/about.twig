@@ -1,0 +1,324 @@
+
+{% extends layout %}
+{% block title %}About Us Archimetric - Architects & Engineers - Surabaya, Indonesia{% endblock %}
+{% block menu %}about{% endblock %}
+{% block content %}
+	<div class="right-panel">
+		<div class="back-cream-inside prelatife">
+			
+			<section id="top-page-inside" class="inside-page">
+				<div class="insides-section2 mw-1275 tengah prelatife text-center">
+					<div class="logo-center">
+						<img src="{{ app.request.baseurl }}/asset/images/logo-archimetric-insidepage.png" alt="" class="img-responsive pc-center">
+						<div class="clear"></div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</section>
+
+			<section id="default" class="inside-page">
+				<div class="insides-section1 mw-1275 tengah prelatife text-center">
+					<div class="mw-940 text-center tengah">
+						<div class="top-ins-topss-cont">
+							<h1 class="title-page">{{ get_setting.about_title }}</h1>
+							<div class="clear"></div>
+							<h4 class="mb-0">{{ get_setting.about_subtitle }}</h4>
+							
+							<div class="clear height-45"></div>
+							<div class="lines-black-about-tops-pg tengah"></div>
+							<div class="clear height-50"></div>
+							<div class="height-15"></div>
+
+							<span>{{ get_setting.about_short_content }}</span>
+							<div class="clear"></div>
+							
+							{{ get_setting.about_content|raw }}
+
+							{# <p>Archimetric was founded as a small design studio in 1988 in Surabaya, Indonesia by Jimmy Priatman with his partners Jusuf Wikono, Ratna Alifen, and Pius Atmadja, but has since grown in scope and expertise to become one of the nation&rsquo;s most distinguished practices, with a grade 4 qualification &ndash; the highest &ndash; from the LPJK (Lembaga Pengembangan Jasa Konstruksi). With a portfolio that extends over a period of more than two decades, we have worked on a wide range of projects from corporate offices and commercial spaces to hotels, multi-family residential buildings and educational facilities to industrial facilities.</p>
+							<p class="mb-0">The core of our practice lies upon our commitment to the betterment of the built environment through an integrated design approach to achieve design excellence and sustainability.</p> #}
+
+
+							<div class="clear"></div>
+						</div>
+
+						<div class="clear"></div>
+					</div>
+					
+					<div class="clear"></div>
+				</div>
+			</section>
+
+			<section id="full-images" class="inside-page">
+				<div class="insides-section2 tengah prelatife text-center">
+					<div class="full-images">
+						{# <img src="{{ app.request.baseurl }}/asset/images/about-1.jpg" alt="" class="img-resposnive"> #}
+						<img src="{{ app.request.baseurl }}/admin/images/static/{{ get_setting.about_image_1 }}" alt="" class="img-resposnive">
+					</div>
+					<div class="clear"></div>
+				</div>
+			</section>
+
+			<section id="default" class="inside-page">
+				<div class="insides-section2 tengah prelatife text-center">
+
+					<div class="setup-about-middle-custom-ct mw-1166">
+						<div class="list prelatife">
+							<div class="pict">
+								<img src="{{ app.request.baseurl }}/admin/images/static/{{ get_setting.about_section_image_1 }}" alt="" class="img-responsive">
+							</div>
+							<div class="desc right-p">
+								<div class="visible-lg visible-lg">
+									{# <h3>Our <br>
+										Social <br>
+										Responsibility</h3> #}
+										<h3>{{ get_setting.about_section_title_1 }}</h3>
+									</div>
+								<div class="visible-sm visible-xs">
+									<h3>{{ get_setting.about_section_title_1 }}</h3>
+								</div>
+								<div class="clear"></div>
+
+								<p>{{ get_setting.about_section_content_1|raw }}</p>
+
+								<div class="clear"></div>
+							</div>
+							<div class="clear"></div>
+						</div>
+							<div class="clear"></div>
+							<div class="tagline-right fright">
+								<div class="prelatife">
+									<span class="start_tc"></span>
+									<p>{{ get_setting.about_section_quote|nl2br }}</p>
+									<span class="end_tc"></span>
+								</div>
+								<div class="clear"></div>
+							</div>
+							<div class="clear"></div>
+						<div class="list prelatife left-p mb-0">
+							<div class="pict">
+								<img src="{{ app.request.baseurl }}/admin/images/static/{{ get_setting.about_section_image_2 }}" alt="" class="img-responsive">
+							</div>
+							<div class="desc">
+								<div class="visible-lg visible-lg">
+									<h3>{{ get_setting.about_section_title_2 }}</h3>
+								</div>
+								<div class="visible-sm visible-xs">
+									<h3>{{ get_setting.about_section_title_2 }}</h3>
+								</div>
+								<div class="clear"></div>
+								<p>{{ get_setting.about_section_content_2 }}</p>
+								<div class="clear height-10"></div><div class="height-3"></div>
+								<small>{{ get_setting.about_section_contentsmall_2|raw }}</small>
+								<div class="clear height-40"></div>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+
+				</div>
+			</section>
+			
+			<section id="full-images" class="inside-page">
+				<div class="insides-section2 tengah prelatife text-center">
+					<div class="full-images prelatife">
+						<img src="{{ app.request.baseurl }}/admin/images/static/{{ get_setting.about_image_2 }}" alt="" class="img-resposnive">
+						<div class="pos-abs-fulls">
+							<div class="table-outer">
+								<div class="table-in">
+									<div class="desc-about-4bottom text-center">
+										<span class="title">{{ get_setting.about_image_2_title }}</span>
+										<div class="clear height-20"></div>
+										<p>{{ get_setting.about_image_2_content|raw }}</p>
+										<div class="clear"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</section>
+
+			<section id="default" class="inside-page">
+				<div class="insides-section tengah prelatife text-center">
+					
+					{# Start cont services #}
+					<div class="mw-1389 tengah prelatife cont_services">
+						<div class="outers-dt-listingCOnt-services">
+							<div id="posts" class="row">
+								{% if get_service %}
+									{% for key, d_service in get_service %}
+									    <div class="item col-md-12 col-lg-6">
+											<div class="items prelatife">
+												<div class="pict-left">
+													<img src="{{ app.request.baseurl }}/admin/images/service/{{ d_service.image }}" alt="" class="img-responsive">
+												</div>
+												<div class="cont-white-left ml-75">
+													<h4>{{ d_service.title }}</h4>
+													<div class="clear height-20"></div>
+													{{ d_service.content|raw }}
+												</div>
+											</div>
+										</div>
+									{% endfor %}
+								{% endif %}
+								
+								{# <div class="item col-md-12 col-lg-6">
+									<div class="items prelatife">
+										<div class="pict-left">
+											<img src="{{ app.request.baseurl }}/asset/images/icon-structural-engineering.png" alt="" class="img-responsive">
+										</div>
+										<div class="cont-white-left ml-75">
+											<h4>Structural Engineering</h4>
+											<div class="clear height-20"></div>
+											<p>Our experience involves virtually all sizes and types of structures. Our structural design team is capable of the design of conventional wood, structural steel, and reinforced concrete structures as well as advanced design of high strength concrete, pre-stressed and pre-cast concrete composite construction, and space framed steel structure.</p>
+										</div>
+									</div>
+								</div>
+								<div class="item col-md-12 col-lg-6">
+									<div class="items prelatife">
+										<div class="pict-left">
+											<img src="{{ app.request.baseurl }}/asset/images/icon-mechanical-enginering.png" alt="" class="img-responsive">
+										</div>
+										<div class="cont-white-left ml-75">
+											<h4>Mechanical, Electrical, and Civil Engineering</h4>
+											<div class="clear height-20"></div>
+											<p>Our collaborative approach to projects often includes engineers in the beginning phases of the projects, rather than at the last stage. We believe this is the best approach to creating integrated building solutions.</p>
+										</div>
+									</div>
+								</div>
+								<div class="item col-md-12 col-lg-6">
+									<div class="items prelatife">
+										<div class="pict-left">
+											<img src="{{ app.request.baseurl }}/asset/images/icon-construction-enginering.png" alt="" class="img-responsive">
+										</div>
+										<div class="cont-white-left ml-75">
+											<h4>Construction Management</h4>
+											<div class="clear height-20"></div>
+											<p>We provide Construction Management services to guarantee the delivery of a successful project. This field of service has become increasingly important given that quality is our focus. Construction managers are needed to ensure that the work performed in the construction site is according to our plans and specifications. We provide full-time site supervision during construction to serve as quality control of the contractor’s work and to manage construction according to budget and schedule.</p>
+										</div>
+									</div>
+								</div> #}
+
+							</div>
+						</div>
+						<div class="clear"></div>
+					</div>
+					{# End cont services #}
+					<div class="height-25 clear"></div>
+					<div class="clear"></div>
+					<div class="h1 back-grey-abouts-bottom"></div>
+					<div class="clear height-50"></div>
+					<div class="clear height-50"></div>
+					<div class="clear height-30"></div>
+					<div class="mw-1389 tengah prelatife">
+						<div class="bottom-cont-leadership">
+							<div class="top-sbtitle">
+								<h4>LEADERSHIP</h4>
+								<div class="clear height-15"></div>
+								<span class="text-center">Get to know the people behind Archimetric.</span>
+								<div class="clear height-50 height-20"></div>
+								<div class="lines-black-bottoms-t tengah text-center"></div>
+								<div class="clear"></div>
+							</div>
+							<div class="middle">
+								<div class="clear height-50"></div><div class="height-20"></div>
+								<div class="listing-people-leadership-t">
+									<div class="row">
+										{% if get_leader %}
+											{% for key, d_leader in get_leader %}
+												<div class="col-lg-3 col-md-6">
+													<div class="items">
+														<div class="pict"><img src="{{ app.request.baseurl }}/admin/images/leader/{{ d_leader.image }}" alt="" class="img-responsive"></div>
+														<div class="clear height-30"></div>
+														<div class="desc">
+															<div class="titles">
+																<span>{{ d_leader.title }}</span>
+															</div>
+															<div class="clear height-20"></div>
+															{{ d_leader.content|raw }}
+															{# <p>As the founder of Archimetric, he currently serves as the Director of Design and Planning as well as the principal architect. He is involved in most of the firm's projects and responsible for the firm's commissions. Three of his works, Graha Pangeran, Grha Wonokoyo, and Holy Stadium receive the ASEAN Energy Awards in 2002, 2006, and 2009 respectively, for being the best performing buildings in terms of energy efficiency in Indonesia and ASEAN. Mr. Priatman is also a recipient of the prestigious Kalyanakretya Utama Award in 2002 from the President of the Republic of Indonesia and the Ministry of Research and Technology for his dedication in applied architectural technology. </p> #}
+														</div>
+													</div>
+												</div>
+												{% endfor %}
+										{% endif %}
+										{# <div class="col-lg-3 col-md-6">
+											<div class="items">
+												<div class="pict"><img src="{{ app.request.baseurl }}/asset/images/ir-yusuf.jpg" alt="" class="img-responsive"></div>
+												<div class="clear height-30"></div>
+												<div class="desc">
+													<div class="titles">
+														<span>Ir. Jusuf Wikono, HAKI</span>
+													</div>
+													<div class="clear height-20"></div>
+													<p>Jusuf Wikono serves as the Director of Technical Services, with a primary responsibility in the area of Construction Management and Supervision Services. He received his Civil Engineering degree from Petra Christian University Surabaya in 1982, and had received a number of certifications for further courses in civil engineering. </p>
+													<p>During his years of practice, he has an extensive experience in leading teams on a wide variety of projects which focuses on construction management services. He is a professional member of the Indonesian Society of Civil and Structural Engineers.</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-3 col-md-6">
+											<div class="items">
+												<div class="pict"><img src="{{ app.request.baseurl }}/asset/images/ir-pius.jpg" alt="" class="img-responsive"></div>
+												<div class="clear height-30"></div>
+												<div class="desc">
+													<div class="titles">
+														<span>Ir. Pius A.S. Atmadja, M.T., IAI</span>
+													</div>
+													<div class="clear height-20"></div>
+													<p>Pius A.S. Atmadja serves as the Director of Operations and is responsible for Construction Management and Supervision Services. He received his degree in Architecture in 1982 and Master degree in Construction Management in 2000 from Petra Christian University Surabaya.</p>
+													<p>He has been involved in a wide variety of projects with emphasis on supervision services. He is a registered architect and member of the Indonesian Institute of Architects.</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-3 col-md-6">
+											<div class="items">
+												<div class="pict"><img src="{{ app.request.baseurl }}/asset/images/ir-ratna.jpg" alt="" class="img-responsive"></div>
+												<div class="clear height-30"></div>
+												<div class="desc">
+													<div class="titles">
+														<span>Ir. Ratna S. Alifen, M.C.E , HAKI</span>
+													</div>
+													<div class="clear height-20"></div>
+													<p>Ratna S. Alifen is a structural engineer and serves as Director of Finance since 1988. She graduated from Petra Christian University Surabaya in 1978 and received her Master of Civil Engineering degree from Illinois Institute of Technology, Chicago in 1996. She has been involved in various projects of the firm and her professional area of expertise is structural engineering and construction management.</p>
+													
+													<p>She is a professional member of the Indonesian Society of Civil and Structural Engineers and also lectures at Petra Christian University Surabaya.</p>
+												</div>
+											</div>
+										</div> #}
+									</div>
+								</div>
+								<div class="clear"></div>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+
+					<div class="clear"></div>
+				</div>
+			</section>
+			
+			{% include "/layouts/footer_bottom_insides.twig" %}
+			<div class="clear"></div>
+		</div>
+		<div class="clear"></div>
+	</div>
+{# end container #}
+<script type="text/javascript">
+	$(document).ready(function(){
+		var newWindowwidth = $(window).width();
+		if ( newWindowwidth > 769 ){
+			$.getScript('//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/1.5.25/jquery.isotope.min.js',function(){
+			  /* activate jquery isotope */
+			  $('#posts').imagesLoaded( function(){
+			    $('#posts').isotope({
+			      itemSelector : '.item'
+			    });
+			  });
+			});
+		}
+	})
+</script>
+{% endblock %}
+
+   
